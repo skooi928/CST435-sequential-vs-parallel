@@ -1,0 +1,6378 @@
+CAT304
+Group Innovation Project and Study for Sustainability
+
+Final Report
+
+USMSecure:
+Campus Safety Application
+
+Name Em: Matric Number
+(001 SEONG KIN seongkind2N@ student usm.my 223041100
+LEE ZHI SYEH _lee@ student. usm.my 22303828
+(QUEEK YU FENG ‘queekyufeng @ student.usmmy 22301758
+
+(CHEW JUN LIANG junfiang1115@student.usm my 2230234
+
+Supervisor: Dr. Vaithegy Doraisamy
+
+School of Computer Sciences, Universiti Sains Malaysia
+11800 USM, Penang, Malaysia
+
+Group 23
+
+Declaration
+
+We hereby declare tha this project entitled “USMSecure” is entirely our own work except for
+those which we have referenced and that it has not been previously submitted for assessment
+
+in any cause.
+
+(001 SEONG KIN)
+
+(LEE ZI SYEH)
+
+Cub
+
+(QUEEK YU FENG)
+
+(CHEW JUN LIANG)
+
+DATE: 5/1/2026
+Acknowledgements
+
+We as a group would like to express our sincere gratitude to our supervisor, Dr. Vaithegy
+
+Doraisamy, for her patient guidance and enthusiastic encouragement throughout this project,
+
+She provided helpful and constructive advice dusing the planning and development stages.
+
+Her willingness to dedicate her time and effort to support us is deeply appreciated
+
+We would also like to extend our heartfelt thanks to Assoe. Prof. Mohel Azam Osman and Ts
+Dz, Mohd Heikal Husin who are our course coordinators, for providing valuable guidance and
+
+clear direct
+
+1 to ensure the successful completion of this project. Without their assistance,
+
+‘we would have encountered many difficulties along the way.
+
+Lastly, we are grateful to our supportive and understan«
+
+family members and fiends.
+
+‘Their encouragement and kindness motivated us to persevere and move forward throughout
+
+the project.
+
+Without the help and support ofthese individuals, this project would not have been
+
+We sincerely thank everyone for ther time, effort, and eontributi
+
+Abstract
+
+USMSecure is a mobile application developed to enhance campus safety for students of
+Universiti Sains Malaysia (USM) in the main campus. The application is designed to address
+
+common safety challenges faced by students, especially during nighttime travel and in
+
+isolated or low-visibility areas. By leveraging mobile technology and real-time data,
+USMSecure provides a centralized platform that supports proactive and responsive campus
+safety management, aligning with Sustainable Development Goal (SDG) 11: Sustainable
+
+ble
+
+Cities and Communities, which emphasizes inclusive, safe, resilient, and sustai
+
+environments. The application integrates four core modules. The Safety and Emergency
+Module enables users to tigger emergency alerts and request immediate assistance. The
+Safety Navigation Module provides real-time location tracking and smart routing to guide
+users through safer paths aeross the campus. The Peer Matching Module allows users to
+connect with nearby peers to travel together to enhance personal safety. In addition, the
+
+Community Hub Module serves as a platform for sharing safety-related information and
+
+alerts, and awar
+
+1s content within the campus community. Overall, USMSecure aims to
+
+improve persor
+
+1 security, support timely emergency responses, and promote a safer, more
+
+‘connected campus
+
+«through an integrated mobile application solution,
+Abstrak
+
+USMSecure alah sebuah aplikasi mudah alih yang dibangunkan untuk meningkatkan
+
+kkeselamatan kampus bagi pelajar Universiti Sains Malaysia (USM) di kampus induk.
+Aplikasi ini direka untuk menangani cabaran keselamatan yang sering dihadapi oleh pelajar,
+
+Terutamanya semasa pergerakan pada waktu malam sera di kawasan yang terpeneil atau
+
+mempunyai tahap pencahayaan yang rendah. Dengan memanfaatkan teknologi mudah ali
+dan data masa nyata, USMSecure menyediakan satu platform berpusat yang menyokong,
+pengurusan Keselamatan kampus secara proaktif dan responsif, selari dengan Matlamat
+Pembangunan Mampan (SDG) 11: Bandar dan Kom
+
+iti Mampan, yang menekankan
+persekitaran yang inklusif, selamat, berdaya tahan dan mampan.Aplikasi ini
+
+mengintegrasikan empat modul utama. Modul Keselamatan dan Kecemasan membolehkan
+
+pengguna menghantar amaran kecemasan di
+
+‘mendapatkan bantuan segera. Modul Navigasi
+
+Keselamatan menyediakan penjejakan lokasi masa nyata serta laluan pintar untuk
+membimbing pengguna melalui laluan yang lebih selamat di dalam Kampus. Modul Padanan
+Rakan membolehkan pengguna berhubung dengan rakan berdekatan untuk bergerak bersama
+bagi meningkatkan keselamatan dri, Selain itu, Modul Hab Komuniti berfungsi sebagai
+platform untuk berkongsi maklumat dan amaran berkaitan Keselamatan serta kandungan
+Kkesedaran dalam KomunitikampusSecara Keseluruhan, USMSecure bertujuan untuk
+
+meningkatkan keselamatan peribadi, menyokong tindak balas kecemasan yang pantas, da
+
+mewujudkan persekitaran kampus yang lebih selamat serta saling berbubung melalui satu
+
+penyelesaian aplikasi mudah alih bersepadu.
+ble of Content
+
+1.0 Introduction,
+
+1.1 Background, 16
+1.2 Problem statement. "
+1.3 Motivation 18
+1.4 System Objectives. 19
+1.5 Proposed Solution, 19
+
+1.5.1 Enhancing Emergency Preparedness and Response 19
+
+1.5.2 Preventing Accidents and Ensuring Safer Campus Navi 20
+1.5.3 Strengthening Community Engagement and Feedback Systems. 20
+1.54 Promoting Peer Safety through Companion System, 20
+
+1.6 Benefits / Impact Significance of Project. 21
+
+1.7 Uniqueness of Proposed Solution,
+8 Contsibution
+
+1.8.1 List of Tasks for Each Individual. 2
+1.8.2 List of Tasks Done Together. 25
+1.9 Organisation of the Report 26
+2.0 Background Study.
+2.1 USM Campus Safety. 7
+2.2 Challenge Faced by Students. 28
+1 Limited Monitoring and Slow Emergency Response, 28
+2.2.2 Lack of Accessible and Centralised Safety Information. 29
+3 Absence of Intelligent Tools for Safe Navigation, »
+
+2.2.4 Weak Peer Connectivity and Limited Safety Support. 30
+2.2.5 Low Preparedness for Health Emergencies 30
+2.3 Existing Solutions / Similar Applications. 3
+23.1 Rave Guardian, 31
+23.2 Life Guardian. 31
+2.3.3 DSate. 2
+2.3.4 VU Safe Mobile App. 3
+2.4 Navigation Tools. 36
+2.4.1 Ware. 36
+2.4.2 Google Map. 36
+2.4.3 Apple Map. ”
+2.4.4 HERE WeGo. 8
+
+4.0 System Requirements and Analysis
+43.1 Status of Project Development, Al
+43.2 Research Scope. 4l
+43.3 System Capabilities & Limitations a2
+43.3.1 System Capabilities. a2
+43.3.2 System Limitations 43
+
+43.4 Project Management 43
+43.4.1 Work Breakdown Structure (WBS), 4B
+3.4.2 Gantt Chart 46
+43.4.3 SWOT Analysis, AT
+
+43.5 Development Methodology. 48
+3.6 Analysis of Proposed Solution, 48
+3.6.1 Identify user's requirements, 48
+43.7 UML! Design Diagram, 32
+4.7.1 Use Case Diagram, 32
+3.7.2 Use Case Description, 33
+3.7.2.1 General Module. 33
+
+3.7.2.2 SOS Emergency Module. 58
+4.7.2.3 Safety Navigation Module. 6
+
+3.7.24 Community Hub Module 68
+4.7.2.5 Peet Matching Module. n
+
+43.7.3 Flow Chart Diagram. 75
+43.8 Technology Deployed. 78
+43.8.1 Hardware Specification. 1%
+43.8.2 Software Specification, 1%
+43.8.3 Programming Languages / Tools. 8
+
+4.0 System Design,
+
+4.1 System architecture, y
+4.2 System components / modules, 80
+4.3 Database design & Class Diagram. 82
+44 Interface design — User Interface Hierarchy. 83
+4.4.1 Users’ General Interface 87
+4.4.2 SOS Emergency Module’s Interface. 94
+44.3 Safety Navigation Module’s Interface. 102
+444 Community Hub Module’s Interface, 108
+4.45 Peet Matching Module’s Interface. u3
+45 Input & Output Design, 123
+‘5.0 Implementatio
+5.1 Module Implementation. 125
+5.1.1 Users’ General Functions, 1s
+5.1.2 SOS Emergency Module 133
+5.1.3 Safety Navigation Module, 147
+5.1.4 Community Hub Modul. 159
+5.1.5 Peer Matching Module 173
+5.2 System Integration, 190
+
+6.0 Testing / Evaluation
+
+6.1 System Testing. 192
+
+6.1.1 Unit Testing. 192
+6.1.2 Integration Testing. 195
+6.1.3 System Test 196
+
+6.2 Test Case. 198
+6.2.1 General Functions 198
+6.2.2 SOS Emergency Module. 200
+6.2.3 Safety Navigation Module. 201
+6.24 Community Hub Module, 203
+6.2.5 Peet Matching Module. 205
+
+6.3 System Evaluation,
+7.0 Conclusion & Future Work.
+7.1 Conclusion,
+7.2 Future Work.
+References.
+
+List of Tables
+
+‘Table 1.1 List of Tass for Each Individual
+‘Table 1.2 List of Tasks Done Together.
+
+‘Table 2.1 Comparison between Campus Safety Applicatos
+‘Table 2.2 Comparison between Navigation Tools
+
+‘Table 3.1 Capabilities based on Module.
+
+‘Table 3.2 Work Breakdown Structure
+
+‘Table 3.3 SWOT Analysis.
+
+‘able 3.2.1.1 Use Case for Sign Up and Log In Account
+‘Table 3.2.1.2 Use Case for View User Dashboat.
+
+‘Table 3.2.1.3 Use Case for Manage Profile Details.
+‘Table 3.7.2.1.4 Use Case for Add Friend
+
+‘Table 3.7.2.1. Use Case for Add Emergency Contact
+‘Table 3.7.2.1.6 Use Case for Manage User Account
+
+‘Table 3.7.2.2.1 Use Case for Send Emerge
+
+-y SOS Request.
+‘Table 3.7.2.2.2 Use Case for Activate SOS by Power Butto
+
+‘Table 3.7.2.2.3 Use Case for Activate SOS by Shake Detection.
+
+‘Table 3.7.2.24 Use Case for Remove Emergency Alert
+
+‘able 3.2.25 Use Case for Video and Audio Recording During SOS.
+‘Table 3.7.2.3. Use Case for View Safety Hotspot Area
+
+‘Table 3.7.2.3.2 Use Case for View Reported Issues Displayed on the Map.
+‘Table 3.2.3.3 Use Case for Navigate safety route
+
+‘Table 3.7.2.3.4 Use Case for Share live locato
+
+‘Table 3.7.2.3 Use Case for Route Deviation Alen.
+‘Table 3.7.2.3.6 Use Case for Set Safety Timer.
+
+‘Table 3.2.4.1 Use Case for View all reports by users.
+
+“Table 3.2.4.2 Use Case for Add report to community hub
+
+‘Table 3.2.4.3 Use Case for Upload images to the repor.
+
+‘able 3.2.44 Use Case for Like or dislike report posts
+
+‘able 3.2.45 Use Case for Resolve issue reported in community hub
+
+‘Table 3.7.2.5 Use Case for Search for online walking buddy around campus.
+‘Table 3.7.2.
+
+2 Use Case for Accept/Reject walking companion invitation
+
+70
+70
+‘Table 3.2.5.3 Use Case for Preschedule group walking.
+‘able 3.2.5.4 Use Case for Cancel group walk.
+
+‘Table 45.1 Input Design
+
+‘Table 4.5.2 Output Design
+
+“able 6.11.1: Unit Testing.
+
+‘Table 6.1.2.1: Integration Testing
+
+“Table 6.2.1.1 Test Cas for Sign Up and Log In Account
+“able 6.2.1.2 Test Case for View User Dashboard.
+
+‘able 6.2.1.3 Test Case for Manage Profile Details
+
+‘Table 6.2.1.4 Test Case for Add Friend
+
+‘able 6.21.5 Test Case for Add Emergency Contact.
+
+“Table 6.2.1.6 Test Case for Manage User Account
+
+‘Table 6.2.2.1 Test Case for Send Emergency SOS Request
+“Table 6.2.2.2 Test Case for Activate SOS by Power Button.
+‘Table 6.2.2.3 Test Case for Activate SOS by Shake Detection
+‘Table 6.2.2.4 Test Case for Remove Emergency Ales.
+
+‘Table 6.2.2.5 Test Case for Video and Audio Recording Dur
+
+‘Table 6.2.3.1 Test Case for View Safety Hotspot Area.
+‘Table 6.2.3.2 Test Case for View Reported Issues Displayed on the Map.
+‘Table 6.2.3.3 Test Case for Navigate safety route
+
+‘Table 6.2.3.4 Test Case for Shae live location
+
+‘Table 6.2.3.5 Test Case for Route Deviation Ale.
+
+‘Table 6.2.3.6 Test Case for Set Safety Timer
+
+‘Table 6.2.4.1 Test Case for View all reports by users.
+
+‘Table 6.2.4.2 Test Case for Add report to community bub
+
+‘Table 6.2.4.3 TestCase for Upload images to the repo
+
+‘Table 6.2.4.4 Test Case for Like or dislike report posts
+
+‘Tuble 6.2.45 Test Case for Resolve issue reported in community hub.
+
+‘Tuble 6.2.5.1 Test Use Case for Search for online walking buddy around campus.
+
+‘Table 6.2.5.2 Test Case for AccepUReject walking companion invitation
+‘Table 6.2.5.3 Test Case for Preschedule group walking.
+
+‘Table 6.2.5.4 Test Case for Cancel group walk.
+‘Tuble 6.3.1: System Evaluation Based On Criteria, 207
+List of Figures
+
+Figure 2.1: Rave Guardian UL
+
+Figure 22: Life Guardian UL
+Figure 23: bSafe UL
+
+Figure 24: VUSafe UL
+
+Figure 25: Waze application
+
+Figure 2.6: Google Maps.
+
+Figure 27: Apple Map.
+
+Figure 2.8: HERE WeGo.
+
+Figure 3.1 Gantt Chart
+
+Figure 32: Use Case Diagram.
+
+Figure 3.3: User Flow Chart Diagram.
+
+Figure 34: Security Personnel Flow Chart Diagram.
+Figure 35: Admin Flow Chart Diagram,
+
+Figure 4.1 System Architecture
+
+Figure 4.2 System Components.
+
+Figure 4.3 Database Design,
+
+Figure 4.4 User Interface Hierarchy of User.
+Figure 45 User Interface Hierarchy of Security Personnel
+
+Figure 4.6 User Interface Hierarchy of Admin,
+
+Figure 4.7 User Interface Hierael
+Figure 4.8.1: Sign Up.
+
+Figure 4.8.2: Sign In
+
+Figure 4.8.3: Forgot Password Page
+
+Figure 4.84: Update User Details Page.
+
+Figure 4.8.5: Friend feature - Friend lis, Add fri
+Figure 4.8.6: Conversation page.
+
+Figure 4.8.7: Manage Users Page (Admin Only),
+Figure 4.9.1: SOS button and SOS service (record video).
+Figure 4.9.2: SOS Videos List and Manage Video.
+
+Friend request.
+
+31
+2
+33
+34
+36
+37
+38
+39
+46
+2
+98
+76
+n
+or)
+80
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+94
+
+Figure 4.9.3: SOS message notification and SOS Message (SK Ooi: emergeney contact,
+
+yufeng: campus security),
+Figure 4.9.4: SOS Message - Security view
+
+95
+96
+Figure 4.9.5: SOS Message - Admin View
+Figure 4.9.6: SOS Message - Emengeney contact view
+Figure 4.9.7: Shake to SOS feature
+
+Figure 4.9.8: SOS Power button activation.
+
+Figure 4.9.9: Cancel SOS.
+
+Figure 4.9.10: No internet SOS Service.
+
+Figure 4.10.1: Safe Route Idle Mode.
+
+Figure 4.10.2 : Search destination, Destination view, and Route overview
+
+Figure 4.10.3 : Navigation Page.
+Figure 4.10.4: Safety Timeout War
+Figure 4.10.5: Route Deviation Alert
+
+Figure 4.10.6: Share location feature
+
+Figure 4.11.1: Community hub homepage
+Figure 4.11.2: Create new post
+
+Figure 4.11.3: Post detail
+
+Figure 4.11.4: Search posts, verify and resolve pos.
+Figure 4.11.5: Delete post.
+
+Figure 4.12.1 : Peer matching homepage.
+
+Figure 4.12.2: Find walking buddy.
+
+Figure 4.12.3: Reject and accept walking request
+Figure 4.12.4: Group walk
+
+Figure 4.12.5: Create group walk
+
+Figure 4.12.6: Join and leave group walk
+
+Figure 4.127: Start and eancel group
+
+Figure 5.1.11: Handle User Sign Up Via Email
+Figure 5.1.1.2: Handle User Sign In Via Emil
+
+Figure 5.1.1.3: Handle User Sign In Via Google
+Figure 5.1.14: Handle Existing User Sign In Via Google
+
+Figure 5.1.1.5: Reauthentication Before Changing Password,
+
+Figure 5.1.1.6: Feedback When User's
+Figure 5.1.1.7: Add Friend Using Email
+Figure 5.1.1.8: Accept Friend Request
+Figure 5.1.1.9: Fetch User’s Role.
+
+valid Input.
+
+Figure 5.11.10: Display Different Dashboards Based on User's Role.
+
+96
+7
+98,
+99
+100
+101
+102
+103
+104
+10s
+106
+107
+108
+109
+110
+m
+12
+13
+4
+116
+7
+18
+19
+120
+12s
+126
+126
+7
+127
+128
+129
+130
+130
+131
+Figure $.1.1.11: Adi
+
+Figure 5.1.2.1: Function handling send SOS service.
+
+Edit User Role.
+
+Figure 5.1.2.2: Fetch User Information
+Figure 5.1.2.3: No internet SOS Service
+
+Figure 5.1.24: Get User Location,
+
+Figure 5.1.25: Store vdeo recording and Create SOS Alert document
+Figure 5.1.2.6: SOS alert in Firestore with emergency contact info
+Figure 5.1.2.7: SOS Message to Emergency Contact.
+
+Figure 5.1.2.8: SOS Message to Campus Security or Admin,
+
+Figure 5.1.2.9 Caneel SOS,
+
+Figure 5.1.2.10: Update SOS alert status.
+
+Figure $.1.2.11: Send cancellation messages to Emergency Contact.
+
+firestore
+
+Figure $.1.2.12: Send cancellation messages to Campus Security and Admin.
+
+Figure 5.1.2.13: Background Service for Android and 10S.
+Figure 5.1.2.14: Shake Detection Algorithm.
+
+Figure 5.1.2.15: Shake SOS Trigger Flow.
+
+Figure 5.1.2.16: Shake Detection Setting,
+
+Figure 5.1.2.17: Shake Detection Sensitivity Settings
+
+Figure 5.1.2.18: Power Button Service Configuration Constant.
+Figure 5.1.2.19: Power Button Detection Algorithm,
+
+Figure 5.1.2.20: SOS Camera Architecture and Flow
+
+Figure .1.2.21: Cancel Recording
+
+Figure 5.1.3.1: Display report and heatmap logic.
+
+Figure 5.1.3.2: Caleulate the route risk.
+
+Figure 5.1.3.3: Route Deviation Alert.
+
+Figure .1.3.4:Safety Timer
+
+Figure 5.1.35: Share live location function
+
+Figure 5.1.41: Statefl widget community hub sereen.
+Figure 5.142: Widget fi
+Figure 5.1.43: Reports filtering, querying and displaying ifempty
+
+for categorizing.
+
+Figure 5.1.44: Building postcards
+Figure 5.14.5: Create report
+
+Figure 5.1.46: Get reports
+
+Figure 5.1.47: Get specific report and toggle like function
+
+132
+133
+133
+134
+134
+135
+136
+137
+138
+139
+139
+140
+140
+141
+142
+143
+a4
+a4
+14s
+as
+146
+17
+150
+151
+155
+156
+158
+159
+160
+160
+162
+163
+164
+165
+Figure 5.148: Add comment
+Figure 5.1.49: Get comments.
+
+Figure 5.14.10: Toggle comments like
+
+Figure 5.1.4.1: Search, resolve and verify reports
+
+Figure 5.1.4.12: Unverify and delete reports.
+
+Figure 5.14.13: State widget of ereate report screen
+Figure 5.14.14: Functions need in ereate report sereen.
+Figure 5.1.4.15: Report detail screen overview.
+
+Figure 5.1.5.1: UI design of peer matching sereen.
+Figure 5.1.5.2: Ul of find buddy sereen
+
+Figure 5.1.53: Building online user ists
+
+Figure 5.1.5.4: Sending walking request online buddies
+Figure 5.1.5.5: Combining streams,
+
+Figure 5.1.5.6: Update user status
+
+Figure 5.1.5.7: Get online user.
+
+Figure 5.1.5.8: Functions for buddy request.
+
+Figure 5.1.5.9: Notify emergency contact.
+
+Figure 5.15.10: Create group walk.
+
+Figure $.1.5.11: Get upcoming group walk and join group walk.
+
+Figure 5.1.5.12: Leave group walk
+Figure 5.15.13: Start and complete group walk
+
+Figure 5.1 5.14: Get specific user group walk and expire overdue group walk.
+Figure 5.15.15: Create group walk overview
+
+Figure 5.15.16: Create group walk funetion with walking buddy service call
+
+Figure $.1.5.17: Group walk detail sereen overview,
+
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+m7
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+1.0 Introduction
+1.1 Background
+
+Safety is the main concern in if for everyone which allows everyone to continue the
+journey in their lif. Based on professional researchers, safety ean be ensured by knowing the
+condition of a person being protected ftom harm or other undesirable outcomes (Kozol
+2016). By ensuring safety, a person can continue theie daily journey with confidence and
+peace of mind. Inthe background of higher education institutions ike universities, campus
+safety is not only about physical security but also includes emotional well-being and the
+sense of protection for students, staff, and vistors too, However, Malaysian universities are
+sill facing o want to prevent challenges like incidents such as property loss or personal
+
+discomsfort and safety concerns in dimly lit or less populated areas.
+
+For students, safety is the fundamental term to support their academic performance,
+
+confidence and extracurricular act
+
+s. Nevertheless, students often report about feeling
+unsafe and in danger around the university, especially when walking alone at night oF on
+some particular routes between hostels, lecture halls and event venues. This is due to
+inadequate surveillance, insuficient lighting oF a slow emergency communication platform
+for the victim to seek help for others. Just like most of the university, University Sains
+Malaysia (USM), its students are forced by diferent situations to stay up late for the lecture
+lass at night oF go t0 night events alone which may inerease the safety threats. In recent
+news, it shows that the accidents happening around campus are increasing annually and the
+same goes for the cases of theft and harassment (Audit of Anisemitic Incidents 2024, 2025)
+‘As a result, students may Fel fear and ansiety in attending night lectures or events which will
+
+lead to affecting academic results and overall campus experience (Lacoe, 2013).
+
+With the modification of the technology and artificial intelligence, the opportunity to
+develop comprehensive solutions is given, resulting in a project called USMSecure that
+bridges the gap between the campus security and university community. It empowers the
+users (0 call out for emergencies, smart navigation routes, getting safety partners and
+
+providing a communication platform. The application integrates 4 safety modules like the
+
+16
+Safety and Emergency Module, the Campus Safety Map System Module, the Peer Matching
+Module and the Community and Awareness Hub Module. The project supports SDG 11
+
+‘Sustainable Cities and Communi
+
+3s, Target 11.7: “Provide universal access to safe, inclusive
+and accessible, green and public spaces, particularly for women, children, older persons and
+persons with disabilities” It emphasizes providing safe, inclusive and accessible public
+spaces forall individuals especially women, children and vulnerable groups. By combining
+all the modules that mentioned, USMSecure can achieve a safer, highly connected and
+
+‘peaceful university atmosphere.
+
+1.2 Problem statement
+
+‘Campus safety in Malaysia has been facing big challenges. Current campus safety
+measures like Closed-Cireuit Television (CCTV) surveillance and security patrol which are
+limited in efficiency and response time, In USM, there are some areas that remain
+unmonitored especially during late hours, which will lave the students and staff in unsafe
+conditions. An article stated that security issues are the main cause of rime at USM's main
+campus (Ling et al, 2024), It indicates that slow incident detection and communication
+between victims and the security department ate critical factors in solving campus safety in
+Malaysian universities. The lack of an immediate and accessible emergency response system
+makes it dificult for campus security or others to provide immediate assistance during ritical
+
+moments, This study has highlighted the importance ofa faster emergency alert system,
+
+In addition, the current campus safety systems in Malaysian universities are still
+lacking in intelligent tools that can support dynamical access and visualise suggested
+safe-campus areas. This situation also happens in USM where there is no centralized and
+interactive platform for USM students to instantly report incidents to get immediate help
+contact the campus security department or share live locations during emergencies. Thus,
+insufficient real-time campus safety awareness and preventive monitoring will be one of the
+problems faced by Malaysian universities. For example, a new university student does aot
+‘know that particular university map like which partis the least populated area, nearby
+
+canteens, nearby toilets or specific room locations (Mustafa et al., 2021). This lack of
+accessible safety information and navigation support will lead to campus incidents like minor
+
+‘accidents or delays in seeking assistance during emergencies that everyone wants to avoid,
+
+Campus safety cannot be effectively enbanced if they fully rely on the campus
+security department; students must play their role in order to protect themself Students must
+‘build up bonds and help each other to have strong community engagement and peer
+connection. However, many university students have limited peer connectivity and mutual
+safety support that can provide assistance and accompaniment during emergencies de to
+twust issues or introverson, Studies indicate that every student mentioned how they prefer to
+
+be wit
+
+a friend or in a small group of friends, offering further evidence that the buddy
+system works for allowing individuals to feel safer and more in conteol of their safety (Kaiko
+Mubita, 2021). Thus, an effective peer safety network can encourage students to monitor each
+
+‘ther, becoming emergency helpers and prevent walking alone at night.
+
+1.3 Motivation
+
+‘The campus environment should be a safe, inclusive, resilient and sustainable space
+for all students and staff. However, recent incident reports highlight that safety gaps remain ia
+university settings, such as laboratory fire that destroyed the computer lab of USM, (The
+‘Stat, 2024) and natonal-evel assessments have revealed weak visitor controls, undertrained
+‘guards, and malfunctioning surveillance systems across campuses in Malaysia, In addition to
+security-related incidents, health emergencies such as cardiac or respiratory distress also pose
+serious risks within university environments. Although there have been limited public reports
+‘of such cases at USM, studies have shown that awareness and preparedness among students
+‘and staf remain low. A study conducted among the USM community found that only 22.2%
+‘of respondents would call an ambulance during a heart atack situation, and meeely 1.5%
+demonstrated excellent knowledge of heart attack symptoms and appropriate responses
+(Yusof et al, nd.) This indicates that many individuals may not seek timely help during
+
+tical moments, which could lead to life-threatening consequences.
+Furthermore, violent offences and serious accidents in off-campus student dwellings
+have led the Ministry of Higher Education to tighten safety regulations, confirming the
+urgency of the issue. (PressReader, nud.) In the context of USM, which is already
+
+collaborating with the state government on commuting safety programmes, there is a clear
+
+foundation upon which to build. But there remains a gap: no comprehensive, student-centrie
+app exists that integrates emergency alerting, safe routing, peer support, and realtime
+
+‘community hazard or medical emergency reporting (The Star, 2025).
+
+‘Therefore, our project is motivated by the need to prevent avoidable incidents, reduce
+
+response times in both security a
+
+health-related emergencies, promote safer movement
+
+around campus, and foster a connected, aware student community. By leveraging real-time
+
+data, user reports, community input, and smart routing, the app aims to make USM’s campus
+safer and more resilient, contributing through technology to the vision of SDG 11 for
+
+inclusive, secure and sustainable campus life
+
+14 System Objectives
+
+1. To develop a secure emergency assistance mobile application for USM students in
+
+distress,
+
+2. To develop a real-time monitoring and safe route navigat
+
+feature to enhance
+
+‘campus safety
+
+43. To build supportive peer community that promotes mutual safety and ear.
+
+5 Proposed Solution
+1.5.1 Enhancing Emergency Preparedness and Response
+
+‘To overcome the lack of knowledge and preparedness among students during
+emergencies, USMSecure introduces an SOS Button that allows users to seek immediate
+
+help. When activated, the button instantly shares the user's real-time location with campus
+
+security or emergency contacts,
+
+suring rapid assistance even when the user is panicked or
+unable to make a call. This system not only improves emergency response time but also
+
+builds a sense of confidence and security among students
+
+1.5.2 Preventing Accidents and Ensuring Safer Campus Navigation
+
+‘To prevent unwanted incidents and enhance preventive safety awareness, USMSecure
+features a Best Route Calculation system. By analysing real-time data, user feedback, and
+historical safety reports, the system identifies and recommends safer walking routes within
+
+and around campus. Paths that are poorly lit, isolated, or marked as unsafe are avoided,
+
+reducing the likelihood of students encountering dangerous situatio
+
+hours of low-visibilty conditions.
+
+1.5.3 Strengthening Community Engagement and Feedback Systems
+
+‘To improve communication and collective participation in campus safety, USMSecure
+includes a Community Hub feature. This interactive platiorm allows users to report unsafe
+
+areas, lostand-found cases, or minor inciden
+
+as well as share and receive real-time updates
+‘on emergencies such as thefts, fires, oF Moods. It also includes a suevey-based feedback
+system to gather student perceptions of campus safety, helping authorities make data-driven
+improvements. Through this feature, the app transforms students from passive observers into
+
+‘active contributors to campus security and awareness.
+
+1.5.4 Promoting Peer Safety through Companion System
+
+To further ensure that students are not left vulnerable, the Peer Matching feature
+
+enables users to pair up with others heading in the same dies
+
+especially during late
+hours. This promotes shared responsibility and peer support, fostering a culture of care and
+
+Vigilance across the university community
+1.6 Benefits / Impact / Significance of Project
+‘The implementation of USMSecure brings significant improvements to campus safety,
+
+emergency response efficiency, and the overall sense of security among students and staff at
+
+USM. By integrating technology with community collaboration, the project enhances both
+
+individual protection and collective preparedness across the university
+
+‘One of the key benefits isthe increase in personal safety and confidence. Students and
+staff can move around campus especially during late hours with greater assurance knowing
+they are connected to a network of real-time monitoring, emergency assistance, and peer
+support, This sense of security not only reduces ansiety but also contributes to a more
+
+positive and safe learning environment
+
+‘The solution also brings faster and more coordinated emergency responses. By
+
+reducing communication delays between victims, witnesses, and campus security,
+USMSecure ensures that incidents are detected and addressed promptly. This improvement
+can significantly minimize potential harm during emergencies, leading to a safer and more
+
+‘resilient university environment.
+
+In addition, the system encourages community engagement and mutual responsibility
+‘Through its peer safety features, students and staff are empowered to look out for one another.
+‘This fosters a stronger collaboration and trust among the community. This creates a more
+
+‘connected and caring campus community
+
+Furthermore, USMSecure benefits from having a centralized platform for safety
+alerts, risk reporting, and data-driven insights into high-risk areas. These insights can guide
+future decisions on campus lighting, patol planning, and infrastructure improvements,
+
+leading to more efficient resource allocation and long-term sustainability
+Overall, USMSecure represents more than just a safety app, itis a step toward a
+smarter, more responsive, and peopl-centered campus ecosystem. It empowers the university
+community to act effectively during crises, builds tast between students and campus
+authorities and promotes culture of awareness and prevention, ‘The long-term impact
+extends beyond USM, as this application can be also replicated across other universities to
+
+create safer educational environments nationwide,
+
+1.7 Uniqueness of Proposed Solution
+
+USMSecure stands out from the existing safety applications dough is innovative
+combination of intelligent emergency response systems, community collaboration, and
+real-time envitonmental awareness. While most existing applications primarily focus on
+providing basic SOS features oF location sharing, USMSecure inteaduces a more contextual
+
+‘and adaptive approach tailored specifically for university environments,
+
+Firstly, the mul-mode SOS emergency activation in USMSecure provides users with
+\aious ways to request help during critical moments. Unlike conventional applications that
+rely solely on a manual SOS button, USMSecure integrates voice-activated and
+shake-aetivated SOS triggers, allowing users to discreetly send emergeney alerts even when
+they cannot physically access their phones. This ensures faster response times and offers
+
+enhanced safety in high-stress or restrictive situations.
+
+Secondly, the peer matching system distinguishes USMSecure from all existing
+solutions. Instead of simply allowing users to share their journey or live location, this feature
+matches users heading to similar destinations and encourages them to walk together. This
+‘approach not only increases safety through companionship but also fosters trust and
+collaborative social connection among students and staff: This fosters a culture of shared
+
+responsibilty within the university community
+In adit
+
+1 the Campus Hotspot Map and Campus Navigation System introduce a
+new dimension of situational awareness that fits the university environment. While most
+
+existing safety apps do not provide real-time environmental context, USMSecure enables
+
+users to visualize erowd density and identify high-activity zones through a continuously
+
+upslated map. The navigation system then recommends the safest and most comfortable paths,
+
+prioritizing areas with adequate lighting, frequent patrols, and higher foot trafic. This not
+
+ight.
+
+only enhances personal safety but also reduces anxiety for those walking alone at
+
+Moreover, USMSecure centralizes safety alerts and important ips within a single,
+user-friendly platform. The system community engagement module allows users to report
+
+suspicious a
+
+tes, share updates, Iost-and-found cases and receive instant notifications
+‘This promotes collective awareness and strengthens proactive safety awareness throughout
+
+the campus.
+
+Overall, the uniqueness of USMSecure lies in
+
+integrated ecosystem of real-time
+
+safety system, user collaboration, and accessibility. By combining multi-mode emergency
+activation, peer companionship, and real-time campus insights, USMSecure delivers a holistic
+solution that transforms traditional personal safety tools into a smart, community-driven
+
+safety ecosystem designed specifically for university e
+
+rents
+
+18 Contribution
+1.8.1 List of Tasks for Each Individual
+
+Table 1.1 List of Tasks for Each Individual
+
+‘Name ‘Module Individual Tasks
+Ovi Seong Kin | Community Hub & | -  Implemented the feature to post reports
+Peet Matching
+
+maine (suspicious behaviour, lost & found,
+minor incidents) to the community feed.
+= Implemented photo upload functionality
+
+for reports
+
+Implemented features for lking/disliking
+and commenting on reports.
+Implemented functionality for users to
+mark reports as “Resolved” and
+
+“veri
+
+Implemented the feature to search for
+‘other online users who are open for a
+‘companion walk
+
+Implemented the sending and receiving
+‘of walking companion invitations
+Implemented the aceeptance and
+rejection of walking companion
+invitations
+
+Implemented the feature to preschediule a
+‘group walking session with planned
+
+routes and times.
+
+Lee Zhi Syeh
+
+General Module
+
+Implemented user registration and login
+
+functionality, including role-based access
+
+contro
+
+Implemented the user profile
+
+management feature
+
+Implemented the user dashboard interface
+
+tw display personalized content
+
+Inplemented the emergency contact
+sment feature, allowing users to
+
+‘add, edit, and remove tusted contacts.
+
+Implemented the friend management
+
+Feature.
+
+Implemented the conversation feature
+
+between connected users.
+
+Implemented the admin management
+
+Feature.
+
+Queek Yu Feng.
+
+SOS Emergency
+Module
+
+Implemented SOS activation,
+‘cancellation, and status handling.
+Implemented location permission
+handling and real-time GPS location
+retrieval
+
+Implement role-based SOS notifications
+
+For emergency &
+‘admin users
+
+tacts, seeurity, and
+
+Implement optional video and audio
+recording dusing SOS activation
+
+Implement internet connectivity checks
+‘and emergency call fallback.
+Implement security and admin
+
+monitoring of SOS alerts and user
+
+location.
+Chew Jun Liang | Safety Navigation Implement safety hotspot map which
+Module display the reported issue with heatmap
+‘on the map
+
+Implement route risk calculation and
+navigation feature
+
+Implement the safety timer alert
+Implement the route deviation alert for
+monitoring the user deviate from the
+route
+
+Implement the live location sharin,
+feature
+
+1.8.2 List of Tasks Done Together
+
+Table 1.2 List of Tasks Done Together
+
+‘Task
+
+UVUX Desig the overall layout and user interface
+clements for each module,
+Focus on consistency in design across all modules,
+
+to ensure a seamless user experience.
+
+Documentation Document the development process for each module
+including use cases, design, testcase and
+implementation steps for each of our modules,
+
+Conduct usability testing for all modules to e
+
+smooth navigation and interactio
+
+Perform unit and integration testing for features that
+
+rely on eross-module data, such as logging in and
+ing profile settings linked to notifications
+
+Perform an overall system testing to ensure whole
+
+system work among all modules.
+
+Database Schema Design = Collaborate on a shared database schema using
+
+Firebase that supports all modules, ensuring
+‘compatibility for inventory, user data, a
+notifications.
+
+1.9 Organisation of the Report
+
+‘This report consists of 7 chapters. Chapter 1.0 is the introduction of our project. It
+consists of general background of the project, problem statement, objectives, proposed
+
+Solution, benefits of the proposed  solutioy and member
+
+uniqueness of the proj
+
+contrbutio
+
+to the project.
+
+‘Chapter 2.0 provides what campus safety currently looks like and how technology ean
+help improve it. We begin by looking at the safety situation at Universiti Sains Malaysia
+(USN), including the issues and vulnerabilities that students and staff encounter around
+campus. This is followed by a closer look at the challenges students face in their daily
+ud the lack of accessible
+
+routines, such as safety risks, difficulties in getting quick help,
+
+safety information. We continue to explore existing safety applications and solutions that are
+similar t0 our proposed project. Their features, strengths, and weaknesses are reviewed 10
+understand how well they meet the needs of USM students. By comparing these applications,
+We are able to identify the gaps and limitations that still remain. Chapter 2 also discusses
+
+‘common navigation and mapping tools used in safety systems, showing how these tools can
+
+support or be incorporated into the development of our project.
+
+‘Chapter 3.0 describes the system requirements and analysis involved in developing.
+the USMSecure mobile application. It also discusses the project scope, system capabilites
+‘and limitations, project management, development methodology; analysis of proposed
+solution, design diagram and technology deployed. By conducting a structured analysis of
+user requirement, system behaviour and interaction flows, this chapter can ensure thatthe
+proposed solution is aligned with the core objectives of campus safety. Besides that, in
+chapter 3 we analyse what we have to implement in detail, users and system requirements for
+
+every module like immediate emergency assistan
+
+.. safe navigation, improved
+
+‘communication among students and campus security. Additionally, a well organised project
+management for our system development in order to design a robust, user friendly and
+reliable mobile campus safety application. This systematic approach allowed all key system
+
+<lements to be identified in the early stages ofthe development process.
+
+Chapter 4.0 presents the system design of the USMSecure mobile application
+developed to enhance campus safety at USM. It describes the overall system architecture and
+explains how the system components and modules interact to support the application's
+
+functionality. The chapter also describes the database design and class diagram, which det
+
+the structure of data storage and system behavior. In addition, the user interface design is
+
+discussed, including the user interface hieratchy and general user interface to ensure usability
+‘and consistency. The input and output design is presented to illustrate how data is captured,
+
+processed, and displayed within the system,
+
+In chapter 5.0, it is the
+
+splementati
+
+chapter. Each team member explains their
+
+individual contributions about implementation of the project which includes how each
+
+module was implemented. This involves explanation of code, algorithms, flow charts or
+storyboards. It also discusses how all modules are integrated to form a cohesive system,
+
+‘ensuring that all components work together seamlessly.
+
+In chapter 6.0, we focus on Testing and Evaluation. It includes the testing phases of
+the system like unit testing, integration testing and overall system testing. Test cases are
+aligned withthe use eases to ensure the system meets its requirements
+
+In chapter 7.0, we end with Conclusions and Future work. We summarize the whole
+
+‘project achievements and identify potential future developments or enhanceme
+
+2.0 Background Study
+2.1 USM Campus Safety
+
+‘Campus safety has become a growing concern in Malaysian universities, including
+USM. Recent incidents and studies have highlighted gaps in surveillance, emergency
+response, and overall preparedness among students and staff: For example, a laboratory fire
+
+that destroyed the computer lab at USM illustrated the need for better safety mechanisms and
+faster incident response (The Star, 2024), National-level assessments have also revealed
+‘weaknesses such as under-trained guards, malfunctioning surveillance systems, and poor
+
+Visitor control across Malaysian campuses (PressReader, n.).
+
+es Further add to the tisk, as awareness and readiness remain
+
+Health-related emerg
+low. A study among the USM community Found that only 22.2% of respondents would call
+‘an ambulance during a heart attack situation, and merely 1.5% had excellent knowledge of
+
+symptoms and corret actions (Yusof et al, n.d).
+
+These
+
+\dings show that current safety approaches are insufficient and that students
+require a more reliable, accessible, and student-centric platform, Motivated by these gaps,
+
+this project aims to enhance campus safety by developing a mobile application that integrates
+
+emergency assistance, safe-route navigation, real
+
+ime monitoring,
+
+\d_ peer support,
+
+addressing both secutity threats and medical emergencies (The Star, 2025).
+
+2.2 Challenge Faced by Students
+2.2.1 Limited Monitoring and Slow Emergeney Response
+
+USM currently uses CCTV cameras and routine security patrols to keep the campus
+safe, but these measures do not fully cover all areas. Some spots, especially those that are
+
+Quiet oF dimly lit at night, remain un
+
+jonitored. This leaves students exposed to risks when
+
+‘walking back from evening classes, club activities, of late-
+
+ight lab sessions.
+
+‘The existing surveillance system also struggles to detect incidents quickly, and
+information often reaches security officers later than it should, Research shows that slow
+
+incident detection
+
+1d weak communication between victims and the security department are
+
+major factors contributing to campus safety issues at USM (Ling et al., 2024). As a result,
+
+students who experience harassment, thet, or suspicious situations may not receive help fast
+enough. Without a quick and reliable way to alert security, the everyday risks students face
+
+‘become even more concerning.
+2.2.2 Lack of Accessible and Centralised Safety Information
+
+Students currently lack a unified channel to report emergencies, request help, or share
+
+real-time location data. Most reporting methods require making a phy
+
+we call or physically
+locating a security post both difficult during panic situations or when a student is unable to
+speak clearly. New students, in particular, face difficulty navigating unfamiliar pathways,
+isolated shorteuts, or poorly lit routes. Many are unaware of essential facilities such as the
+
+nearest toilets, canteens, or exits in campus buildings.
+
+Students who are unfamiliar with campus layouts face confusion and delays when
+
+seeking assistance. Without an accessible and central platform for safety informat
+students struggle fo make informed decisions during critical moments, increasing their
+vulnerability to accidents or delayed response during emergencies. (Mustafa eta, 2021)
+
+2.2.3 Absence of Intelligent Tools for Safe Navigation
+
+USM currently does
+
+provide incelligs
+
+a
+
+wigation tools that guide students
+through safe routes or highlight risky areas in real time. Students have no way to determine
+‘which paths have better lighting, higher foot traffic, or active surveillance. During nighttime
+
+‘or when a student is alone, they rely solely on memory or assumptio
+
+to decide which path
+totake,
+
+Without dynamic safe-route recommendations, students cannot avoid isolated areas of
+react proactively to potential risks. The absence of visualised safe zones or tsk indicators
+
+also limits preventive safety awareness. This lack of intelligent navigation increases their
+‘exposure fo unsafe environments and reduces their confidence in moving around campus
+
+during certain hours.
+2.24 Weak Peer Connectivity and Limited Safety Support
+
+‘A safe campus environment relies not only on formal security systems but also on a
+connected and supportive student community. However, many university students struggle
+‘with trust, introversion, oF lack of opportunities to build supportive peer networks. As a
+result, they may not have someone to accompany them at night, check on them during
+
+‘emergencies, or offer help when needed.
+
+Research shows that students feel significantly safer when accompanied by friends or
+small groups, demonstrating the effectiveness of the buddy system (Kiko Mubita, 2021)
+‘Yet, because USM currently lacks a structured platform that facilitates peer monitoring or
+
+mutual assistance, many students continue to walk alone or face emergencies without reliable
+
+support, This weakens the sense of secutity and increases the risk of incidents during
+
+vulnerable situations.
+
+2.25 Low Preparedness for Health Emergencies
+
+Health-related emergencies pose an equally serious threat to campus safety. A study
+‘conducted among the USM community revealed extremely low awareness and preparedness
+id
+
+merely 1.5% had excellent knowledge of heart attack symptoms (Yusof et al, n.d). This
+
+‘with only 22.2% of respondents would call an ambulance during a heart attack situation,
+
+means that dur
+
+crises such as cardiac arrest, respiratory distress, or sudden injuries,
+students may not know how to respond correctly or quickly.
+
+In such cases, delays in seeking medical help can lead to severe or life-threatening
+‘outcomes. Students also often do not know the locations of first-aid rooms, elinies, or AEDS
+‘on campus. The low preparedness level highlights a major challenge, as effective emergency
+response requires immediate recognition and action which is something many students are
+
+‘currently unable to provide,
+
+30
+2.3 Existing Solutions / Similar Applications
+23.1 Rave Guardian
+Rave Guardian is one of the most widely popular campus safety applications in the
+
+United States. The app allows students to connect with the 9-1-1 Emergency Call Center,
+
+ime alerts, and trigger emergency alerts with a single tap. In Rave Guardian, the
+
+users can click the emergency button to deliver help messages to interconnect public, private
+‘and 9-1-1 response teams fo ensure any victim receives help on time. In 2023, Rave Mobile
+Safety launched an emergency and safety alert system that helps to reduce emergency
+response times in participating universities by facilitating direct communication between
+users and campus security teams, However, Rave Guardian is designed primarily for
+large-scale institutions in the U.S. and highly depends on centralized campus police
+infrastructure. This makes it less adaptable to the local environment and infrastructure of
+
+Malaysian universities
+
+Figure 2.1: Rave Guardian UT
+
+23.2 Life Guardian
+
+Life Guardian is a personal and organizational safety application that is supported
+across North America, which is specified for medical usage and designed to monitor seniors
+
+31
+and individuals that live alone. Life Guardian provides features like fall detection when the
+system detects individual falls and sends alerts and GPS and safe zones for location tracking
+to notify family members when users enter of exit specific areas. Despite its comprehensive
+safety features, Life Guardian focuses more on general public oF personal safety rather than
+‘campus environments. Ths will limit the ability to integrate with campus facilities such as
+CCTV systems of patrol routes which ate essential for ensuring personalized safety support in
+
+‘any educational institution,
+
+Figure 2.2: Life Guardian UL
+
+23.3 bSafe
+
+‘Safe focuses on emergency alerting, real-time monitoring and rapid response. During
+emergencies, the user can tigger an emergency alert via the app using the SOS button oF
+using voice activation and the emergency notification willbe sent to the pre-selected contacts.
+Besides that, it provides live video and audio streams t0 tusted contacts or monitoring
+centres to ensure immediate situational awareness. Based on the reviews in Google Play
+
+‘Store, bSafe’s users state that many features inside the app are not usable and require paying
+
+32
+to unlock those Features. This might cause delay in emergency communication in critical
+
+moments for bSafe’s users.
+
+Timer
+mode
+
+Figure 2.3: bSafe UL
+
+234 VU Safe Mobile App
+
+‘VUSafe is the official mobile safety app that is only specified for Vietoria University
+in Australia. It is designed to support students, staf and campus visitors to ensure they ane
+away fom danger on campus. The app features an emergency alert button that notifies
+
+campus. security and allows them to locate the user's real-time location, push safety
+
+notifications about campus or building evacuations, a “friend walk” function allowing a
+
+‘usted contact to track and monitor the user’s walk until their destination and request a
+
+3
+security escort to walk through campus. On the other hand, VUSafe is designed only for an
+Australian institution with security infrastructure Which differs from Malaysian universities
+
+VU SAFE
+
+Figure 2.4: VUSafe UT
+Comparison between Campus Safety Application
+
+Rave BSafe Lite vu Safety | usMsecure
+Guardian Guardian
+
+E Yes Yes Yes Yes Yes
+
+Emergency
+
+button
+
+tap power Yes
+
+button
+
+activated SOS
+
+Shake Yes
+
+activated SOS
+
+Safety Timer Yes Yes Yes
+
+Route Yes
+
+Deviation
+
+Alert
+
+Real time Yes Yes Yes Yes Yes
+
+Centralized Yes Yes Yes Yes
+
+Safety Tips
+
+and Alerts
+
+Recordin, Yes Yes
+
+(Video.
+
+Audio)
+
+Peer Yes
+
+Matching
+
+Share live Yes Yes Yes Yes Yes
+
+location
+
+Campus Yes
+
+Hotspot Map
+
+Campus Yes
+
+Report Issue Yes Yes Yes Yes
+
+24 Navigation Tools
+
+2.1 Waze
+
+‘A community driven navigation application that mainly focused on navigation
+
+systems around the world, It provided rea:
+
+ime user reports to enhance driving efficiency and
+safety like traffic jams, police checkpoints, road closure, crashes and hazards. Based on the
+
+user reports, Waze system can generate and recommend to users the most efficient and fastest
+
+possible route. Additionally, Waze enables fast rerouting capability. When traffie conditions
+hnave a sudden change, the app can identify alternative paths to minimize delay. Overall, Waze
+
+is useful for drivers who want dynamic, fastest-route routing based on live user reports.
+
+860m
+
+bs37:
+Chartres-de-
+Bretagne
+
+07:34 18 11
+
+Figure 2.5: Wace application
+24.2 Google Map
+
+Google Maps is the comprehensive global map and navigation platform which offers
+
+2 variety of features like driving, walking, eyeting and publ
+
+transport. It contains huge
+
+databases of points of interest (POIs), including business restaurants, schools, landmarks and
+
+facilities. Google Maps also supports advanced features like Street View, offline maps and
+
+live wall
+
+c data that can help the users to overcome different situations. With the integration,
+
+of the map system, numerous datasets and intelligent features make Google maps a good
+
+all-rounder for travel exploration and road discovery
+
+36
+Figure 2.6: Google Maps
+
+24.3 Apple Map
+
+Apple Maps is Apple's native mapping and navigation app for Phone, iPad, and Mac,
+designed to deliver a seamless and reliable travel experience. It offers turn-by-turn navigation
+for driving, walking, and eyeling, along with detailed street and shop information, The Look
+Around feature provides immersive street-level views, allowing you to explore areas before
+Visiting, Additionally, Apple Maps also integrates tightly with other Apple services such as
+Siri, CarPlay, and Calendar by creating a smooth and connected user experience. With
+detailed maps, real-time traffic updates, and accurate route guidance, Apple Maps works
+seamlessly within the Apple ecosystem, making everyday navigation effortless and
+convenient.
+
+37
+Figure 2.7: Apple Map
+
+244 HERE WeGo
+
+HERE WeGio is a highly eapabl
+features and mul
+
+navigation app that is well known for its offline map
+
+‘modal transportation options. It was originally developed by Nokia, and
+‘now as evolved
+
+1 strong mapping platform . The app allows users to download entire
+country oF regional maps for offline use which is user friendly for those areas with poor
+‘mobile connectivity. Moreover, HERE WeGo provides routing for driving, eycling, walking
+‘and public transit along with estimated costs for certain travel modes such as taxi rides. The
+app excels in accuracy and reliability across different countries, providing consistent offine
+navigation. Therefore, travelers oF users can use routing an
+
+wavigation without relying
+
+heavily on data connections, This is how HERE WeGo stands out as a practical and
+
+user-friendly soluti
+
+38
+en cos
+
+Figure 2.8: HERE WeGo
+
+Table 2.2 Comparison between Navigation Tools
+
+Waze | Google Map ] Apple Map | HERE
+
+WeGo
+
+System
+
+Walking
+
+Navigation
+
+Safety Route
+
+Calculation
+
+‘Campus
+
+Road Alert
+
+Peet
+
+Fr
+SOS Button
+during
+
+Navigation
+
+Campus Risk
+Report
+System
+
+‘Campus
+
+Hotspots
+
+Safety Timer
+
+Route
+Deviation
+
+Alert
+
+Live location
+
+sharing
+
+40
+3.0 System Requirements and Analysis
+4.1 Status of Project Development
+
+We are developing a brand new campus safety application, In
+
+the process, we are
+integrating functionalities to ensure student's safety such as emergency sos, safety map
+
+navigation, community hub, and peer matching companion walk. The technology facilitates
+
+the announcement and verification of suspicious, dangerous or any important news that
+notifies the users directly and shows on the map. Moreover, smart navigation that
+automatically selects the safest route is a smart way to prevent users from walking through
+dangerous areas. Developing this project gives users @ more effective and smart way of
+protecting themselves from any possible threats
+
+3.2 Research Scope
+
+‘The proposed system focuses on improving student safety by providing a centralised
+
+and accessible platform. It is developed as a mobile application to ensure that students can
+
+‘easily reach it during their daily routines. The system is designed for all university students
+
+and academic staff, especially newcomers who may struggle with unfamiliar routes,
+
+‘emergency procedures, ot locating essential facilites
+
+‘The application offers key features that address common safety and navigation
+challenges on campus. It enables students 10 report emerge
+
+es oF request assistance
+
+instantly, removing the need to make phone calls or physically approach security posts.
+
+Real-time location sharing allows users to communicate their exact position during urgent
+situations, supporting quicker and more accurate responses.
+
+‘The system also provides an interactive campus map that highlights important
+facilities such as toilets, exits, cantee
+
+and safer walking routes. By combining emergeney
+reporting, route guidance, and facility information in one platform, the mobile app aims to
+
+reduce confusion, enhance students’ confidence
+
+navigating the campus, and improve
+overall safety awareness. Through these integrated features, the solution supports a safer,
+‘more informed, and more connected campus environment.
+
+4l
+43.3 System Capabilities & Limitations
+
+3.3.1 System Capabilities
+
+Table 3.1 Capabilities hased on Module
+
+Module
+
+Capabilities
+
+SOS Emergency Module
+
+Users can immediately send emergency request 10
+emergency contact and campus security once the
+SOS button is press
+
+Users ean activate the SOS emergency button by
+pressing the power button 3 times continuously.
+Users ean activate the SOS emergency button by
+shaking their phone.
+
+Users can remove the emergency alert manually.
+Users ean record video and audio once the SOS
+button is activated
+
+Safety Navigation Module
+
+Users can view safety heatmap areas on the map.
+Users an view reported issues displayed directly
+fom the map.
+
+Users can navigate through the safest recommended
+route to their destination,
+
+Users can shate their live location with selected
+fiends or contacts
+
+‘The system can detect when a user deviates from
+the planned route and send an alert to emergency
+contact,
+
+‘The system automatically sets a safety timer and
+will notify the user's emergency contact if the user
+does not reach their destination on time.
+
+Community Hub
+
+Users can report for suspicious behaviour or
+strangers
+
+Users ean upload photo oF video as evidence
+
+Users ean like or dislike, and share on the report
+Users can resolve the report lagged
+
+Users can view the eampus important contacts
+
+User ean receive the eampus important notice
+
+Peet Matching
+
+Users can search for online walking buddy around
+campus
+
+Users can accept of reject the walking companion
+invitation
+
+Users can preschedule group walking
+
+Users can confirm passing diferent checkpoints
+
+3.3.2 System Limitations
+
+‘The proposed USMSecure system is stil facing several limitations due to the
+technical and operational restriction. The SOS feature relies heavily on stable internet and
+GPS connectivity since the messages will be sent in real time. Ifa student isin an area with
+poor signal oF connectivity, the location updates may be delayed or inaccurate and affect
+response time. Besides that, the system also eannot guarantee immediate intervention as the
+actual response depends on the availability of emergency contacts or campus security
+personnel. This is because USMSccure only funetions in Universiti Sains Malaysia (USM)
+Main Campus area and the campus security is referred to the Jabatan Keselamatan (JK) in
+USM. Therefore, the availability of the user"s emergency contacts and JK cannot be
+confirmed anytime due to the distance and working period. This is one of the limitations of
+the USMSecure too. Furthermore, there is no automatic detection of the emergency. The user
+must manually trigger the SOS button to request emergency help. The accuracy of the safe
+route navigation is also limited and based on the user report data. In addition, the peer
+matching system highly depends on user participation since the user is only limited in USM
+
+so it may not find a suitable companion, These limitations highlight the need for continuous
+
+improvement and data maintenance to improve system robustness and adaptability.
+
+34 Project Management
+
+3.1 Work Breakdown
+
+Structure (WBS)
+
+Table 3.2 Work Breakdown Structure
+
+Activity Date | Duration | Person In Charge
+
+1. Project Planning
+
+a. Develop WBS and build a] ts/ioro2s [3 Lee Zhi Syeh,
+schedule,
+
+2, Project Initiation
+
+a. Identify system objectives isoz02s [3 Chew Jun Liang
+
+b. Identify system scope and] is/toizo2s [3 (oi Seong Kin
+limitations
+
+Task specification and | 15/10/21
+assignment
+
+3 Queek Yu Feng
+
+43
+‘3. Analysis Task.
+
+a Gather and analyse detailed ] 1g/102025 [3 Queck Yu Feng,
+information fom resource and Chew Jun Liang
+b. Define and prioritise the user] ts/ioi202s [3 Lee Zhi Syeh
+requirement
+Create a use case list and 21/10/2025 | 3 Ooi Seong Kin,
+cam. Queek Yu Feng
+4. Analyse and model new systems ] 21/10/2025 3 Chew Jun Liang,
+using UML diagrams
+4. Design Tasks
+a Design conceptual view and] 24/10/2025 | 5 Lee Zhi Syeh
+
+database scheme.
+
+b. Design sereen layouts and cross
+links for mobile applications
+
+24/100202:
+
+0 Seong Kin
+
+€. Design user interfaces for each
+module
+
+26/10/2025
+
+ALL
+
+Identify
+methods and tools needed to
+carry out our project
+
+program classes,
+
+26/10/2025
+
+Chew Jun Liang,
+Queek Yu Feng
+
+5. Build Tasks
+
+Hteration 1:
+
+a Build required database Viv202s oi Seong Kin
+
+b. User authentication and) 3/11202s [2 Lee Zhi Syeh
+registration Feature
+
+©. Admin authentication and] 3/11/2025 [2 Lee Zhi Syeh
+registration Feature
+
+4. Security authorities | yii202s | 2 Lee Zhi Syeh
+authentication and_ registration
+feature
+
+€ Profile management feaure | sit1202s_— [3 Chew Jun Liang
+
+Hteration 2:
+
+a. SOS emergency button feature |situ202s 4 Queek Yu Feng,
+
+b, Location acces Feature vais [i Ooi Seong Kin
+
+Automatic recording video and [13/11/2028 [2 Ooi Seong Kin
+
+d. Send emergency request feature ]isitu202s [3 Lee Zhi Syeh
+
+eration 3
+
+a. Collect area safeness J 18/11/2025 ALL
+information
+
+. Campus safety heatmap feature | 23/11/2028 Queck Yu Feng
+Safety route navigation feature [2s/ii20@s [4 Chew Jun Liang
+
+4. Shate live location feature aoni2ms [3 Ooi Seong Kin
+
+e. Safety timer feature 2nza0s [2 Lee Zhi Syeh
+
+Route deviation alert feature | 4/12/20 4 Queek Yu Feng
+
+eration 4:
+
+a. Report issue feature wii2i20 3 Lee Zhi Syeh
+
+wb. Issue upvore and comment [ruvia202s [3 Ooi Seong Kin
+feature
+Campus information update [1471272025 [2 Chew Jun Liang
+feature
+
+4. Campus important contact] 16/12/2025 | 2 Queck Yu Feng
+feature
+
+Iteration 5
+
+a. Pece matching feature wwize0as [4 Ooi Seong Kin
+
+b. Preschedule group walking | 22/12/2025 | 2 Queck Yu Feng
+feature
+Checkpoint passing feaure | 2a/iz2025 [3 Chew Jun Liang
+
+6. Testing
+
+a. Build test data amizams [2 Lee Zhi Syeh
+
+b. Perforen unit est and in aonzams 4 Queek Yu Feng. Ooi
+Perform acceptance and system |2/1/2026 [3 Chew Jun Liang, Lee
+
+functionality test internally
+
+Zhi Syeh
+
+‘d. Release accepted version and | 5/1/2025 4 ALL
+documentation,
+
+34.2 Gantt Chart
+
+Figure 3.1 Gantt Chart
+
+Reference: &@ CAT304 Gantt Chart
+
+46
+34.3 SWOT Analysis
+
+Table 3.3 SWOT Analysis
+
+Strength
+
+‘Weakness
+
+= Real-time protection features such as
+SOS alerts, route deviation
+detection, and safety timers enhance
+user safety during emergencies,
+
+= Comprehensive safety ecosystem
+that integrates safety route
+navigation, community reporting,
+eet matching, and SOS funetions
+nto one unified platform,
+
+= Strong user engagement through live
+Tocation sharing, community
+reporting, and peer matching
+features.
+
+= Supports campus security with digect
+alerts and real-time information 10
+improve response time.
+
+Only supported within the USM
+area, This. limits its impact and
+reduces user safety coverage outside
+the campus.
+
+High dependency on accurate
+location services, which may be
+affected by GPS signal issues or low
+connectivity and provide inaccurate
+location,
+
+User privacy concems especially
+involving live location sharing and
+peer matching Feature
+
+Requires active user participation for
+supporting the features like
+community reporting and peer
+matching to remain effective.
+
+Opportunities
+
+‘Threat
+
+= Expansion to other campuses or
+public areas, transforming the
+platform into’ a nationwide safety
+solution,
+
+= Integration with external services,
+such as police authorities,
+ambulance and fire station services.
+
+= Provide insightful safety analyties to
+mprove campus lighting, patrol
+routes, and infrastructure planning
+
+Potential data privacy and security
+
+vems involving sensitive,
+information, user locations, and
+community reports.
+
+Challenges in scaling infrastructure
+to support rapid user growth across
+‘multiple campuses or regions.
+
+47
+3.5 Development Methodology
+
+In this project, our team adopted the Agile methodology for developing the
+USMSecure application. Agile is an iterative development approach that breaks the project
+into small eyeles to enable the continuous delivery, refinement, and improvement. Unlike the
+
+traditional Waterfall model where teams complete their port
+
+and pass it tothe next phases,
+Agile supports adaptive pla
+
+Jing, rapid development, and continuous Feedback. This
+flexibility makes it easier to respond to changing requirements and challenges throughout the
+
+project.
+
+‘The development process was organized into a series of sprints, as outlined in the
+Work Breakdown
+
+structure (WBS). Each sprint focused
+
+delivering specific core features,
+
+including the SOS Emergs
+
+1ey Module, Safety Navigation Module, Community Hub Module,
+‘and Peer Matching Module, This iterative structure allowed the team 10 progressively
+develop, test, and refine each feature by reducing the risk of major changes and ensuring that
+
+‘every component functioned well
+
+By adopting Agile, the team maintained a high level of flexibility and efficiency
+‘throughout the development lifecycle. The iterative eyeles enabled continuous improvement
+and faster issue discovery, and ensured the progress aligned with the project timeline.
+Overall, Agile methodology proved to be the most suitable approach for the USMSecure
+
+project. This methodology allows the team to meet developm
+
+3 objectives effectively while
+
+the system evolves in a structured and responsive manner.
+
+3.6 Analysis of Proposed Solution
+
+3.6.1 Identify user's requirements
+
+‘To ensure that the USMSecure application meets the actual needs of students, staff
+‘and campus security personnel, several techniques were used to gather user requirements.
+
+First of all, web and article research provides comprehensive information about user's
+
+48
+preferences and system expectations. By analyzing article, literature and reviews, we can
+
+identify the tends and user preferences across diverse demographics.
+
+Besides that, we also do surveys and questionnaires were distributed to students and
+staff from different backgrounds to understand their common safety concems, preferred
+features, and expectations from an emergeney application. Interviews with campus security
+officers were conducted to identify operational needs, response workflows,
+
+1d required
+backend functions.
+
+Last but not least, focus group discussions were also organised with student
+
+representatives 1o have depth discussion to validate early concepts, refine features, and
+censure the system remains practical, usable, and reliable. These combined methods helped
+build a system that aligns closely with user behaviour, safety expectations, and campus
+‘operational requirements,
+
+Functional requirements:
+
+1 Users can sign up to create a
+
+mal user account and securely login to their personal
+
+[USMSecure account using student or staff email to access normal user features.
+
+2. Users ean si
+
+ip to create a security user account and securely login to their personal
+
+USMSecure account using email to access security user features.
+
+43. Users can activate the SOS button to request immediate assistance by sharing their
+
+live location to their pre-setup emergency contact and campus security
+4, Users ean add, edit and manage their emergency contacts.
+
+5. Users should be able to use safe route navigation with recommended paths around
+‘campus,
+
+66, Users ean use community hub to share information and view safety updates
+7. Users ean report incidents and view community safety updates.
+
+8, Users can use a peer matching feature that connects other users who want a walking
+
+‘companion,
+
+49
+Non-functional requirements:
+
+Performance and Speed
+
+‘The system should respond immediately once the SOS Emergency button is pressed,
+ensuring real-time user's location and alert details are sent to campus security and its
+‘emergency contact respectively. Actions such as sending alerts, updating user statuses,
+and retrieving location data must occur without delay to ensure user safety. High
+responsiveness is critical, especially during life-threatening situations where every
+
+second counts
+Accessibilty
+
+‘The system should be user-fiendly for all students and staf, including those who are
+
+not tec!
+
+jologically proficient. The interface should be clean , intuitive and easy to
+understand with cleatly labeled buttons for all features to guide users through
+activities like SOS emery
+
+ey button and peer matching features.
+Seourity
+
+‘The system must protect all sensitive information such as user identity, location data,
+
+‘and emergency logs. Login authentication should be secure and ensure all normal
+
+users using usm student and staff email, All stored data must be enerypted to prevent
+
+unauthorized access.
+Scalability
+
+‘The system must be capable of supporting a changing number of users as the campus
+
+population changes. As more studen
+
+activate SOS alerts or access safety features
+
+simultaneously, the system should continue to operate efficiently without delay. With
+the help of firebase, a Google Cloud-based backend can ensure that even during
+
+high-traffic periods, the system rem
+
+stable and responsive without performance
+
+degradation.
+
+Reliability
+
+‘The system must remain operational at all times and highly reliable with minimal
+
+downtime, especially during emergencies or peak time. All core funetions such as
+
+50
+08 activation, safe route navigation, peer matching and community hub should work
+consistently without failure. Reliability ensures that users ean depend on the system
+‘when needed most. The campus security will receive accurate and real time
+information o respond effectively
+
+Maintainability
+
+Regular maintenance and prompt resolution of software defeets are essential to keep
+the system running smoothly:This includes new version updates and making
+
+improvements based on user feedback. A maintainable system allows developers to
+
+quickly resolve issues, improve performance, and integrate new technologies without
+
+disrupting ongoing usage.
+
+sl
+3.7 UML/ Design Diagram
+
+37.1 Use Case Diagram
+
+Figure 3.2: Use Case Diagram
+3.7.2 Use Case Description
+
+3.7.2.1 General Module
+
+Table 3.7.2.1.1 Use Case for
+
+ign Up and Log In Account
+
+Use ease ID:
+
+u001
+
+Use ease
+
+.2 Up and Log In Account
+
+Scenario:
+
+Users create an account or log in to access personalised features
+
+‘Triggering event: | The user opens the application and selects “Sign Up” oF “Log In
+
+Brief description: | This use case allows all user types to register and authenticate
+themselves before accessing the system,
+
+Actors: All users
+
+Related use cases:
+
+Stakeholders: All users
+
+Pre-condition
+
+1. The system must be connected to the user database,
+2. The user has valid credentials (for login) or the required
+information for registration,
+
+Post-conditions:
+
+User is authenticated and granted access to their dashboard.
+
+Flow of activities:
+
+User Security Personnel Admin
+
+1. Clicks the Sign | 1. Clicks the Log In | 1. Clicks the Log In
+Up of Log In button | button using | button using
+fon the homepage. — | assigned credentials. | assigned
+
+credentials
+
+2. System displays | 2, System displays
+
+the sign-up of login | the login form. 2. System displays
+form. the login form,
+
+3. Enters login
+3. Enters required | credentials 3. Enters login
+details (email, credentials
+password, ete). | 4. Submits the form,
+
+4. Submits the
+4. Confirms and] 5. Redirects 0 | form,
+
+submits the form. — | dashboard,
+
+5. Redireets to the
+5. Redirects 10 ‘admin dashboard,
+dashboard,
+
+Exception
+
+1. Incorrect or missing credentials
+
+2. Duplicate account during sign-up.
+3. Server/database connection failure.
+
+Table 3.7.2.1.2 Use Case for View User Dashboard
+
+Use case ‘wo02
+Use case nan View User Dashboard
+
+Scenario: Users view a personalised home dashboard
+
+Triggering event: | User logs in successfully
+
+Brief description: | Provides an overview of features available based on the user's
+Actors: All users
+
+Related use cases:
+
+Stakeholders: All users
+
+Pre-conditio User must be logged in
+
+Post-conditions:
+
+Dashboard displays relevant information depending on user type
+
+Flow of activities: User Security Personnel Admin
+1. Views shortcuts] 1. Views active |1. Views system
+to safety features, | reports, alerts, and | overview, user stats,
+navigation, and tracking tools. ‘and management
+alert tools.
+
+Exception 1. Dashboard fails to load due to server issues.
+
+conditions:
+
+Table 3.72.1.3 Use Case for Manage Profile Details
+
+Use ease ID: w003
+
+Use ease nan Manage Profile Details
+
+Users view of edit their personal profile details
+
+Triggerit
+
+User selects “Profile” or “Edit Profile.”
+
+Brief description
+
+Allows users to update their own information, such as name,
+
+profile image, of contact number
+
+Actors:
+
+All users
+
+Related use cases:
+
+Stakeholders:
+
+All users
+
+Pre-conditior
+
+User suceessfully logs in and clicks on profile
+
+Post-conditions:
+
+Updated user details saved in the system,
+
+Flow of activities:
+
+User Security Personnel Admin
+
+1. Navigates tothe Profile section,
+
+2. System displays e
+
+st profile picture and details.
+
+3. Selects an option to:
++ Upload a new profile picture
+
++ Remove current picture (revert to default)
+
++ Update username, password, or contact details
+
+4. Updates password (if chosen)
++ Inputs old password, new password, and confirms it
++ System validates and updates the password
+
++ System logs the user out for security
+
+System saves the updates
+
+ystem confirms all changes with a success messag.
+
+Exception 1 Tava input format,
+conditions: 2. Database failed to save.
+
+Table 3.7.2.1.4 Use Case for Add Friend
+Use ease ID: 004
+
+Use ease nan
+
+‘Add Friend
+
+Scenario: Users connect with other users by sending and managing ftiend
+requests,
+
+Triggering event: | The user seleots the “Friends” option from the homepage
+
+Brief description: | Users can search for other users and send fiend requests. After
+acceptance, both users are added to each other’ frend list
+
+Actors: User, Security Personnel
+
+Related use cases:
+
+All users
+
+User must be logged into the system and the target user must exist,
+in the database.
+
+Post-conditions: | Friend relationship is stored in the system and both users appear
+in each other's friend list
+
+Flow of activities: User Security Personnel
+
+1. Navigates to the Friends section.
+2. System displays fiend list and seatch option.
+
+nail address
+
+3. Searches for another user using
+
+nds a friend request
+5. System notifies the selected user ofthe request.
+6. Target user accepts or rejects the request.
+
+7. If accepted, system updates both users" friend lists and displays.
+confirmation
+
+Exception 1. User not found,
+conditions: 2. Friend request fils to send due to network error
+Table 3.72.1.5 Use Case for Add Emergency Contact
+
+Use ease I u00s
+
+Use ease nan ‘Add Emergency Co
+
+Scenario: students add trusted individuals (e.g, family members, close
+friends, roommates) as emergency contacts to be notified during
+critical situations.
+
+Triggering eve The student navigates to the Emergency Contact section and
+
+selects “Add Cor
+
+Brief description: | Students register emergency contacts, enabling the system to
+notify them instantly during distess situations. Only students
+have access to this Feature
+
+Actors: Students,
+
+Related use cases:
+
+Stakeholders: Students, Admin
+
+Hl
+2. Emergeney contact information (name and phone number) must
+be valid
+
+Student must be logged in
+
+Post-conditions:
+
+Emergency contact is saved in the database and linked to the
+students profile
+
+Flow of activities:
+
+1. Navigates to the Emergency Contacts section,
+2. Selects “Add Contac
+3. System displays the form for adding a new emergency contact.
+4. Student enters required details (name, relationship, phone
+‘number, optional email).
+
+Student confirms and submits the form.
+System validates the input and saves the emergency contact.
+7. System displays a success message confirming the addition.
+
+Exception
+conditions:
+
+1 Tavalid phone number format
+Duplicate emergency contact,
+ystem or database er
+
+3
+
+Table 3.7 2.1.6 Use Case for Manage User Account
+
+Use ease ID:
+
+006
+
+Use ease Manage User Account
+
+Scenario: ‘Admin manages all registered user accounts in the system,
+
+Triggering eve ‘The Admin clicks “User Management” or “Manage Accounts”
+from the admin dashboard,
+
+Brief description: | This use case allows the admin to view, edit, deactivate, or delete
+user accounts. This feature ensures that user data is
+well-maintained and security risks are minimised
+
+Actors: Admin
+
+Related use cases:
+
+Stakeholders:
+
+All users
+
+Pre-conditir
+
+1. Admin must be logged in with valid credentials.
+2. Admin must have system permissions 10 access the User
+Management module
+
+Post-conditions:
+
+1. Any updates, deactivations, or deletions t0 a user account are
+saved tothe database
+2. Users affected by cha
+
+receive system notifications
+
+Flow of activities:
+
+1. Navigates t0 the User Management section from the admin
+
+dashboard.
+
+2. System displays the list of all registered users (students &
+
+security personnel)
+
+3. Selects a user account to view more details.
+4. Chooses an action:
+
++ Edit user information
+
++ Reset password
+
++ Deactivate account
+
++ Delete account
+
++ Change user role e.g, upgrade security personnel access)
+
+System validates admin permissions forthe selected action,
+
+ystem saves changes and updates the user database
+
+7. System displays a suocess message.
+
+Exception
+conditions:
+
+1 Insufficient admin permissions
+2. User account not found or deleted
+
+3.7.2.2 SOS Emergency
+
+Module
+
+Table 3.7.2.2.1 Use Case for Send Emergency SOS Request
+Use ease ID: 007
+Use ease Send Emergeney SOS Request
+
+Scenario: Users press the SOS emergency button to request help.
+
+Triggering event: | Press the middle bution at the bottom navigation bar
+
+Brief description: | The system immediately sends an emergency alert and location of
+the user tothe user's emergency contacts and campus security.
+
+Actors: All users
+
+Related use cases:
+
+W008, 1009, UOIO, UOT
+
+Stakeholders:
+
+All users
+
+Pre-conditir
+
+Users have at least one emergency contact saved,
+
+Post-conditions:
+
+‘An emergency alert is sent with the user’s location to the user's
+emergency contacts and campus security.
+
+Flow of activities:
+
+User Security Personnel Admin
+L. Press the SOS] 1. Receives L. Receives
+button. ‘emergency cemergen
+request. request,
+
+2. Views user }2. Check the
+details and | emergeney and
+location. confirm it is
+
+3. After resolving] resolved.
+the Sos
+
+emergency, you
+can ask’ “the
+‘admin to review
+‘and close the
+
+Exception 1. Location permission denied.
+conditions
+Table 3.7.2.2.2 Use Case for Activate SOS by Power Button
+Use ease ID: 008
+Use ease Activate SOS by Power Button
+
+Scenario:
+
+Users activate the SOS emergency button by using the power
+bouton,
+
+Triggering eve Power button pressed 3 times continuously
+Brief description: — | The system detects the pow.
+
+SOS emergency request automatically
+Actors: All users
+
+Related use cases:
+
+1007, UOLO, UOT
+
+Stakeholders:
+
+All users
+
+Pre-conditior
+
+Users have at least one emergency contact saved,
+SOS background service is enabled in settings.
+
+Post-conditions:
+
+‘An emergency alert is sent with the user's location to the user's
+emergency contacts and campus security.
+‘SOS alert status becomes “danger”
+
+Flow of activities:
+
+User Security Personnel ‘Admin
+
+1. Press the power | 1. Receives 1. Handle user
+
+button 3 times} emergency location and pass
+
+within 3] request it to security
+
+2. Views user} personnel
+2. dewils and
+location
+
+Exception 1. Location permission denied.
+conditions: 2. Power-button detection service disabled.
+
+Table 3.7.2.2.3 Use Case for Activate SOS by Shake Detection
+Use ease I 009
+Use ease Activate §
+
+“The user triggets the emergeney alert by shaking the device
+
+Triggering eve ‘The device detects strong motion that exceeds the shake threshold,
+
+Brief description: — | The system detects a rapid shaking motion and automatically
+initiates the SOS emergency process
+
+Actors: All users
+
+Related use cases:
+
+007,
+
+1010, VOL
+
+Stakeholders:
+
+All users
+
+Pre-conditior
+
+Users have atleast one emergency contact saved,
+Shake-to-aetivate setting is enabled
+Accelerometer sensors must be functioning,
+
+Post-conditions:
+
+‘An emergency alert is sent with the user's location to the user's
+emergency contacts and campus security.
+
+SOS alert status becomes “danger”
+
+Flow of activities:
+
+User Security Personnel Admin
+1. The user shakes | 1. Receives L. Receives
+the phone with} emergency ‘emergency
+required force. request. request
+2. System triggers 2. Views user|2. Check the
+SOS request. dewils and | emergeney and
+location. confirm it is
+3. After resolving | resolved.
+
+the 08
+emergency, you
+can ask the
+‘admin 10 review
+
+‘and close the
+
+60
+Exception 1. Location permission denied.
+conditions 2. Sensor malfunction.
+3. Shake sensitivity too high/low causing false triggers,
+Table 3.7.2.2.4 Use Case for Remove Emergency Alert
+Use ease ID: 010
+Use ease Remove Emergency Alert
+
+Scenario: Users can cancel an active emergeney alert once they are sale oF
+smistoueh,
+
+Triggering event: | User selects “Cancel SOS” in the application.
+
+Brief description: _ | The system stops sending ongoing emergency alerts and notifies
+user's emergency contacts and campus security that the user is
+safe
+
+Actors: All users
+
+Related use cases:
+
+W007, L008, L009, VOI
+
+Stakeholders:
+
+All users
+
+Pre-conditir
+
+‘There must be an active SOS alert.
+
+Post-conditions:
+
+OS is deactivated,
+SOS alert status becomes “safe”
+
+The recording of the video is cancelled.
+
+‘The safe alert is sent to the user's emergency contacts and campus
+security
+
+Flow of activities:
+
+User Security Personnel Admin
+1. Once SOS is] 1. Receives a] 1. Receives a
+activated, the | follow-up follow-up
+user can press] notification that | notification that
+the “Cancel the alert is] the alert is
+08” button, cancelled cancelled.
+
+2. Confirms
+cancellation,
+
+Exception
+conditions
+
+1. Users eannot open the app.
+2. Cancellation fails due to network issues.
+
+61
+Table 3
+
+5 Use Case for Valeo and Audio Recording During SOS
+
+Use ease I
+
+oll
+
+Use ease name:
+
+Video and Audio Recording During S
+
+0s
+
+When the SOS emergency feature is activated, the system will
+provide the option to start recording Video and audio to capture
+evidence of the emergency situation or can skip the video to SOS
+cemergeney request.
+
+Triggering event:
+
+SOS alert is activated through the SOS button, power button, or
+shake detection,
+
+Briet description: _ | The system begins recording video and audio using the device's
+camera and microphone to document the situation for security and
+investigation purposes once the user chooses to start record,
+
+Actors: All users
+
+Related use cases:
+
+W007, L008, 1009, O10
+
+Stakeholders:
+
+All users
+
+Pre-conditior
+
+Users have granted camera and microphone permissions in their
+device.
+
+SOS alert must be active.
+
+User's device camera and microphone must be functional.
+
+Users do not choose to skip videos.
+
+Post-conditions:
+
+Recorded media is saved locally and can be viewed on the home
+age.
+
+Flow of activities:
+
+User
+
+1 Once SOS is activated, the system will ask for confirmation to
+start video and audio recording.
+
+The video will be stored in the local user device and ean be
+
+viewed in the home page.
+
+Exception
+conditions:
+
+‘Camera or mierophone permission denied
+User's device storage space insufficient.
+Hardware failure (camera blocked, microphone disabled),
+
+37.2.3 Safety Navigati
+
+Module
+Table 3.7.2.3.1 Use Case for View Si
+
+afety Hotspot Area
+
+Use ease ID: uoi2
+Use ease View Safety Hotspot Area
+Scenario: When the user accesses the map, the system shows the heatmap
+using different intensity based on the number of reported issues,
+Triggering even User accesses the map
+Brief description: | The system visualizes hotspot information on the map using
+different intensity to represent the number of reported issue in an
+For example
+‘© Red Mote than 5 report
+‘© Orange ~ More than 3 report
+© Yellow — Less than 3 report)
+Actors: Users and Security Personnel
+
+Related use cases:
+
+013
+
+Stakeholders:
+
+Users and Security Personnel
+
+The user has opened the map interface
+The user is connected tothe internet
+
+Post-conditions:
+
+Hotspot colors are displayed on the map according to the defined
+density categories
+
+Flow of activities:
+
+User Security Personnel ‘Admin
+
+1. Access the map | 1, Access the map | 1. Access the map
+
+2. View the safety] 2. View the safety | 2. View the safety
+hotspot areas | hotspot areas | hotspot areas
+highlighted on the | highlighted on the | highlighted on the
+map. map. ‘map,
+
+Exception
+conditions:
+
+1. No hotspot data available
+2. No internet connection.
+
+6
+
+Table 3.7.2.3.2 Use Case for View Reported Issues Displayed on the Map
+
+Use ease ID: u013
+
+Use ease
+
+‘View Reported Issues Displayed on the Map
+
+Scenario: ‘When users access the map, the reported issues are represented as
+‘cons indicating suspicious activities, incidents, or safety-related
+reports on the specific atea of the map.
+
+Triggering event: | User accesses the map
+
+Brief description: — | The system retrieves all issue reports submitted through the
+Community Hub and visualizes them on the map. using
+category-specific markers. Users can tap on a marker to view more
+details such as the report description, timestamp, and attached
+media
+
+Actors: User and Security Personnel
+
+Related use cases: [ U018
+
+Stakeholders: User and §
+
+curity Personnel
+
+Pre-cor
+
+tions: | The user has opened the map interface.
+‘There are stored issue reports in the system,
+The user is connected tothe internet
+
+Post-conditions: ___| Reported issues are displayed on the map.
+Flow of activities: User Secutity Personnel Admin
+Access the map | 1. Access the map [1
+
+2 View reported |2. View reported
+issue displayed on | issue displayed on ]2. View reported
+
+the map the map issue displayed on
+3. Select the issue to | the map
+resolve
+Exception 1
+conditions: 2
+Table 3.7 23.3 Use Case for Navigate safety route
+Use ease ID: u0l4
+Use ease Navigate safety route
+Scenario: ‘When users input their destination, the system calculates the safest
+route using heatmap and reported issues, then provides navigation
+guidance.
+
+Triggering eve Users enters a destination in the navigation search bar
+
+Brief description: | The system analyzes the heatmap and the reported issues to
+calculate the safest possible route to the destination, The user will
+bbe guided with turn-by-turn navigation,
+
+Actors: All Users
+
+Related use cases:
+
+u012
+
+Stakeholders:
+
+All Users
+
+Pre-conditir
+
+Location permission is granted.
+‘The user is connected tothe internet
+
+Post-conditions:
+
+‘The system generates and displays the safest route
+Navigation begins based on the realtime location
+
+Flow of activities:
+
+User
+
+Security Personnel Admin
+
+1. Opens the navigation feature
+2. Enter the destination
+3. Begins navigation along the recommended safe route
+
+Exception 1. Location permission denied.
+conditions 2. No safety data inthe system.
+3. GPS signal weak or lost.
+4.No internet connection.
+Table 3.7.23.4 Use Case for Share live location
+Use ease ID: ols
+Use ease Share live location
+
+Scenario:
+
+‘When a user selects a contact and clicks the “Share Live Location
+button contact allowing
+the selected contact to view the user's real-time location,
+
+the system sends a message tothe sel
+
+Triggering eve User select a contact and click the “Share Live Location” button
+
+Brief description: _ | The system continuously shares the users live geographic location
+to the selected contact until the user ends the session
+
+Actors: All Users
+
+Related use cases:
+
+uol4
+
+Stakeholders:
+
+User, Selected contact
+
+Pre-conditir
+
+Location permission is granted.
+
+“The user is connected tothe internet.
+Selected contact exists in the system database.
+
+Post-conditions:
+
+‘The system shares the live location data with the selected contact,
+
+Flow of activities:
+
+User Security Personnel Admin
+
+1. Open contact list and select one contact from the list
+2. Click the “Share Live Location” button
+
+3. System sends a message to the selected contact allowing the
+selected contact to view the user’s real-time location,
+
+4. The live location sharing session was terminated by the user, the
+selected contact no allow to view the users live location,
+
+Exception |. Location permission denied.
+conditions: 2. Selected contact not reachable.
+3. GPS signal weak of lost.
+4. No internet connection.
+Table 3.72.3.5 Use Case for Rowe Deviation Alert
+Use ease ID: u016
+Use ease Route Deviation Alert
+
+Scenario:
+
+When a user is navigating along the safety route, the system
+continuously tracks their location, If the user deviates from the
+original route and does not respond to the system within 3 minutes,
+fan alert and live location will be automatically sent to the user's
+
+Triggering eve ‘The user deviates from the route
+
+Brief description: | The system tracks the user's real-time movement while navigating.
+If the user's movement deviates from the safe route path, the
+system triggers a deviation ale
+
+Actors: User
+
+Related use cases: [ U014
+
+Stakeholders:
+
+User, Emergency Contact
+
+Pre-conditior
+
+“The user as selected a destination
+‘The safety route has been suecessfully calculated.
+‘The emergency contact has registered
+
+66
+Location permission is granted.
+
+Post-conditions:
+
+The system sends a deviation ale to the user
+The system sends alerts to emergency contacts
+
+Flow of activities:
+
+1. Starts navigation along the safety route,
+2. Deviates from the original route
+
+3. The system send alert to user
+
+4. If user does not respond, the alert will be sent to the emergeney
+contacts,
+
+Exception 1. Location permission denied.
+conditions: 2. No registered emergency contact
+3. GPS signal weak or lost.
+4.No internet connection.
+Table 3.7.2.3.6 Use Case for S
+Use ease ID: u017
+Use ease Set Safety Timer
+
+Scenario:
+
+When a user starts navi
+automat
+
+to their destination, the system
+ally sets a safety timer based on the estimated travel
+time. If the user does not reach the destination before the timer
+expires and does not respond to the system, the system sends an
+alert to the emergency conta
+
+Triggering event:
+
+‘The user starts the safety route nav
+
+Brief description: | The system automatically sets a safety timer based on the expected
+duration of the route when the navigation starts. If the timer
+expires and the user has not confirmed arrival, an alert notification
+fs sent to the emergency contac
+
+Actors: User
+
+Related use cases: [ U014
+
+Stakeholders:
+
+User, Emergency Contact
+
+Pre-conditior
+
+“The user as selected a destination
+‘The safety route has been suecessfully calculated
+Location permission is granted.
+
+‘The emergency contact has registered
+
+o
+Post-conditions:
+
+Safety timer is set and runs
+Iexpited, alerts are sent to emergency contac
+
+Flow of activities:
+
+User
+
+Starts navigation toa chosen destination,
+
+2. The system will set the safety timer automatically
+
+3. If the timer expires and the user has not confirmed arrival, the
+alert will be sent to the emergeney contacts,
+
+Exception
+conditions
+
+1. Location permission denied.
+2. No registered emergency contact.
+3. GPS signal weak of lost.
+4.No internet connection.
+
+3.7.24 Community
+
+Hub Module
+
+Table 3.7.2.4.1 Use Case for View all reports by users
+
+Use ease I
+
+u01s
+
+Use ease nan
+
+View all reports by users
+
+Users want to check if any accidents or incidents have happened
+oF are happening in school
+
+Triggering eve
+
+Press on the third icon from the left located at the bottom
+navigation bar
+
+Brief description: | Display a list of all user-submitted safety reports, lost-and-found
+cases, and general updates in the community hub.
+Actors: All users
+
+Related use cases:
+
+Stakeholders:
+
+All users
+
+Pre-conditir
+
+Users open the application with logged in status and the system is
+operational
+
+Post-conditions:
+
+Users see a list of reports as posts, with view count, and like,
+comment, share button,
+
+Flow of activities:
+
+User Security Personnel Admin
+
+68
+1. Application | Application Application
+displays community | displays community | displays statistics
+hub page with a list | hub page with a list with charts about
+of posts. ‘of posts, including | the analysis of the
+
+unreviewed of | news posts.
+unresolved flags.
+
+Exception ‘The community hub page is not displayed.
+conditions:
+Table 3.7.2.4.2 Use Case for Add report to community hub
+
+Use ease ID: u019
+
+Use ease ‘Add report to community hub
+
+Scenario: Users see an incident or accident in the campus area and add
+report to notice other users.
+
+Triggering event: | Press on the “+ New Post” button
+
+Brief description: | Allow users to submit a new post detailing an incident, unsafe
+area, lost-and-found case, or general campus update
+
+Actors: All users
+
+Related use cases:
+
+‘View all reports by users (U018), Upload images to report (U020)
+
+All users
+
+Users are on the
+
+ymmunity hub page and the system is
+‘operational and able to connect to the firebase
+
+Post-conditions:
+
+A new post appears on the communi
+users nearby.
+
+hub page, noticing other
+
+Flow of activities:
+
+User Security Personnel Admin
+
+1. User en
+tags)
+
+2. User presses submit.
+3. System validates input and uploads the post to the hub.
+
+rs report details (tite, description, location, category,
+
+Exception
+conditio
+
+1. New report post is not added.
+
+Cc)
+Table 3.7.2.4.3 Use
+
+‘ase for Upload images to the report
+
+Use ease ID: 020
+
+Use ease Upload images to the report
+
+Scenario: Users add a new report post and add images as evidence so it is
+trusted,
+
+Triggering event: _ | Presson the “Add Photos” button.
+
+Brief description: | Enable users to attach multimedia (images) t0 a new report post 10
+provide visual evidence and increase its eredibilty
+
+Actors: All users
+
+Related use cases:
+
+Add report to community hub (U019)
+
+Stakeholders:
+
+All users
+
+Pre-cor
+
+tions:
+
+Users are on the ereate report page to create a new report post.
+
+Post-conditions:
+
+A new post appears on the community hub page with images,
+
+noticing other users nearby.
+
+Flow of activities:
+
+User Security Personnel Admin
+
+1. User seleets the "Add Photos" button on the ereate report pa
+2. User selects of captures images.
+3. Application displays a preview of the selected media,
+
+Exceptio “The images cannot display in the report post.
+conditions:
+Use ease ID: uo2i
+Use ease Like or dislike report posts
+Scenario: Users would like to verify iit is real or fake news.
+Triggering event: | Presson the like or disike button
+Brief description: | Allow users to upvote (ik
+aveuracy of relevance, heli
+Actors: Users
+
+Related use cases:
+
+i)
+Users
+
+Users are on the et
+
+mmunity hub page or report page and the
+system is operational and able to connect tothe firebase,
+
+Post-conditions:
+
+Posts’ like is added or decreased by one depending on users’ click
+
+Flow of activities:
+
+User
+
+rity Personnel
+
+1. User presses the ‘like’ or | 1. User clicks on the verified
+‘dislike’ button on a post. icon,
+
+2. System increments _or | 2. Post is shown with a verified
+‘decrements the respective | icon to ensure that the news is
+count. trusted,
+
+3. The new count is displayed.
+
+Exception 1. The like count doesn't change.
+conditions: 2. Verification status doesn’t change.
+
+Table 3 Use Case for Resolve issue reported in community hub
+Use ease I 022
+
+Use ease
+
+Resolve issue repo
+
+ted in community bub
+
+Users would like to mark the report flagged as resolved.
+
+Triggering event: | Presson the resolved button
+Brief description: | Allow security personnel or admin to mark a reported incident as
+
+‘resolved after taking action, moving it to a resolved category.
+Actors: Security personnel and admin
+
+Related use cases:
+
+Users
+
+Users are on the report detail page and the system is operational
+and able to connect tothe firebase.
+
+Post-conditions:
+
+‘The report is marked resolved and is categorized into resolved
+report page.
+
+Flow of activities:
+
+Security Personnel Admin
+
+1. Security/Admin views report details and verifies the issue is
+resolved.
+
+2. Secutity/Admin presses the "Resolved" button,
+
+3. System marks the report as resolved and moves it to the
+
+“resolved” section
+
+Exception ‘The report still exists in the community hub default category.
+conditions: unresolved.
+
+3.7.2.5 Peer Matching Module
+
+Table 3.7.
+
+5.1 Use Case for Search for online walking buddy around campus
+
+Use ease I
+
+w023
+
+Use ease nan
+
+Search for online walking buddy around campus
+
+Scenario: Users wan
+
+to find walking companions to a destination in campus
+
+Triggering event: | Press “Find Walking Buddy” card
+
+Brief description: | Display a list of other students who are currently online and open
+fora walk toa specific location, facilitating a mutual safety walk
+
+Actors: Users
+
+Related use cases: | -
+
+Stakeholders: Users
+
+Pre-conditir
+
+Users are on the peer matching page and the online matching
+system is operational
+
+Postconditions: | Users search and see online walking buddies with their curren
+location,
+
+Flow of activities: | 1. User enters their current location and destination,
+2. System queries the database for online users.
+
+3. Application displays a list of potential walking buddies with
+
+their destinations.
+
+4, User selects a buddy and sends a walk invitation,
+
+Exception ‘Walking buddies are not show,
+conditions:
+
+Table 3.7.5.2 Use Case for Accept Reject walking companion invitation
+
+Use ease ID: uo24
+
+Use ease AcceptRejeet walking companion invitation
+
+Scenario: Users receive a walking invitation and want to acceptejec.
+
+Triggering event: | Presson the popped out notification.
+
+Brief description: | Allow a user who received a walking buddy invitation to accept
+the request to start a shared walk or reject it
+
+Actors: User
+
+Related use cases:
+
+Search for online walking buddy around campus (U023)
+
+User
+
+‘There ate users who sent invitations and the user who received it
+
+doesn’t block any incoming invitation,
+
+Post-conditions:
+
+‘The information of the inviter is shown with options for users to
+accept or reject.
+
+Flow of activities:
+
+A new invitation notificat
+
+1 n pops up.
+2. User presses the notification.
+
+3. Application displays invite’ information and provides allow oF
+reject as options.
+
+4. User presses “Accept” to stat a walk of “Reje
+
+decline,
+
+Exception
+conditio
+
+‘Notification pressed but nothing changed or no action is taken
+
+Use ease ID: uo2s
+
+Use ease Preschedule group walking
+
+Scenario: Users schedule a group walk before going to class or cafe inside
+the campus area
+
+Triggering event: | Presson the “Create Group Walk button
+
+Brief description: | Enable students to create a planned, future group walk to specific
+campus location ata set time to ensure they have companions for
+
+Actors: User
+
+a
+Related use cases:
+
+Stakeholders:
+
+User
+
+Pre-cor
+
+ition
+
+Users are on the peer matchis
+
+1g page and the system is operational
+
+Post-conditions:
+
+‘A new group walk is created and shown i
+walks page.
+
+de the available group
+
+Flow of activities:
+
+1. User presses the “Create Group Walk” button
+2. User sets date, time, start point, and destination.
+
+up size,
+oup walk and displays it in the available
+
+3. User sets the maximum
+4. System saves the
+group walk page.
+
+Exception
+conditio
+
+A new group walk was not added successfull.
+
+Table 3.7.
+
+5.4 Use Case for Cancel group walk
+
+Use ease ID:
+
+1026
+
+Use ease Cancel group walk
+
+Scenario: Users wanted to cancel the prescheduled group walk due to
+unforeseen circumstances
+
+“Triggering event: | Presson the “Cancel Walk” button
+
+Brief description: | Allows users to cancel the group walk
+
+Actors: User
+
+Related use cases:
+
+reschedule group walking (U025)
+
+Stakeholders:
+
+User
+
+Pre-condition
+
+‘The user is on the group walk detail screen and the user is the
+organizer ofthe group walk.
+
+Post-conditions:
+
+Group walk is deleted.
+
+Flow of activities:
+
+1. User presses on the cancel walk button
+2..A modal dialog is popped up for double confirmation.
+3. User chooses “Yes, Cancel walk.”
+
+4. Group walk is deleted successfully.
+
+Exception
+conditio
+
+Group walk still appears in the “Available” tab.
+
+™
+3.73 Flow Chart Diagram
+
+=
+
+ay
+<>
+Bey
+
+Figure 3.3: User Flow Chart Diagram
+& CAT304-Flowchart_Userpng,
+
+15
+Figure 3.4: Security Personnel Flow Chart Diagram
+‘& CAT304-Flowchart_SecurityPersonnel png
+
+16
+I ~ I 1
+el —& £2
+ae El
+
+Figure 3.5: Admin Flow Chart Diagram
+
+{& CAT304-Flowchart_Admin png.
+3.8 Technology Deployed
+3.8.1 Hardware Specification
+
+‘To run our application, users need to have a mobile device with internet and location
+access with them. Users need to have a least 100MB of storage available to firstly install our
+application, There are no specific CPU requirements forthe mobile devices as USMSecure is
+not a heavy duty application, However, users are suggested to have at least a 32-bit ARM
+architecture CPU. The same ease goes to the RAM, which users ean have a minimum of 1GB
+RAM, but are suggested to have a least 2GB RAM
+
+3.8.2 Software Specification
+
+For the software aspect, users’ mobile deviees must have a minimum android version
+‘of Android 5.0 (Lollipop). Any deviees that are lower than this version will not be able to
+install or un our application. Users are required to have Google Play Service in their phone
+‘which should exist by default
+
+3.8.3 Programming Languages / Tools
+
+‘The frontend programming tool of framework that we used is Flutter which is written
+in Dart mainly. It is Google's Software Development Kit (SDK) made for erafting beautiful
+
+and fast experiences for mobile, web and desktop applications ina single codebase. With this
+advantage, we ean extend our application accessibility to various different platforms with
+
+minimum changes
+
+For the backend and database, we chose Firebase, which is also made by Google
+With both products made by Google, we can have seanaless setup and perfect compatibility so
+that we do not have to worry about future updates. Firebase is a Backend-as-a-Service (BaaS)
+platform which allows us to integrate into our application easily without needing a
+comprehensive Knowledge of backend development, Its pros include realtime data
+synchronization, making it exceptionally suitable for the emergency call and notification
+feature. Besides that, it offers detailed user analytics for better insight, especially for a
+
+id
+safety-ensuring application, which requires professional research on the cause and prevention
+
+of crimes,
+
+We use Visual Studio Code (VS Code) as our code editor as it provides a wide range
+of extensions that supports Dart Language and Flutter. Compared to Android Studio, itis
+lightweight and fast, which will use less CPU and RAM usage. Despite the fact that Android
+Studio provides many different phone model emulators, we can still debug with VS Code
+easily using our mobile device by connecting our mobile with the computer using a USB
+
+cable,
+
+‘To make sure that we can all work together concurrently and syne our progress with
+
+the timeline set, we used the popular distributed versi
+
+-ontrol system, Git. All of our works
+cean be tracked with Git on Gitllub. We work on separated branches with different modules
+separated, and combine them through pull requests which will then be reviewed by the team
+lead to make sure thatthe code is flawless and bug-fre.
+
+4.0 System Design
+
+4.1 System architecture
+
+Zz omnis arose
+
+Figure 4.1 System Architecture
+
+We proposed a system architecture following Fluter's recommended layered
+approach using Model-View-ViewModel (MVVM) and repository patterns. In the user
+
+y
+interface (UD) layer, Views handle user interaction and display UL states, whereas
+‘ViewModels manage Ul logic and interact with the data layer. Diving deeper into the data
+layer, services contain the backend logic for operations like authentication, navigation and
+‘more. We used Firchase for easy authentication and Google Map for simple map navigation
+api. This structure allows data to flow cleanly from APIS to repositories and services, passing
+through ViewModels and finally tothe UL. Sealable development and easier testing is ensured
+
+{or an important real-time campus safety application,
+
+4.2 System components / modules
+
+es [eu | om | esr || Ee |
+| Ge ||[-—]| Se || [Pen |
+
+Figure 4.2 System Components
+& CAT304-System Components. drawio.png
+
+‘The system components of USMSecure deseribe the main modules that support campus
+safety and community interaction. The User Interface includes modules that interact directly
+‘with the users. Which allows students and users to access essential features such as the SOS
+Emergency Module, which enables sending SOS alerts and recording audio or video during
+‘emergencies, and the Safety Navigation Module, which provides safety routes, hotspot areas,
+
+live location sharing, safety timers, and route deviation alerts
+‘The Community Hub Module allows users to view and submit safety reports, upload media,
+‘and interact with posts, while the Peer Matching Module supports finding walking
+
+‘companions and scheduling group walks to enhance personal safety
+
+‘The Security Personnel In
+
+face enables officers to receive SOS alerts, review emergency
+situations, verify reports, and resolve incidents. The Admin Interface allows administrators to
+
+manage user roles and oversee SOS requests and resolutions.
+
+‘The system integrates with the Google Map API to provide real-time navigation services. A
+
+stable Internet Connection ensures smooth communica wonisation between
+
+the user interface, backend, and external services. and all data is securely stored in a
+‘centralised Cloud Database.
+
+81
+4.3 Database design & Class Diagram
+
+fu
+
+bata
+
+ilithwn
+
+nihil
+
+fuer
+
+Figure 4.3 Database Design
+
+& CAT304-Database Design - Class Diagram drawio.png
+44 Interface design — User Interface Hierarchy
+
+Figure 4.4 User Interface Hierarchy of User
+B CAT304-User Interface of Userdrawio.png
+
+3
+TL
+i
+i fy & ft
+
+i Gl
+
+Figure 4.5 User Interface Hierarchy of Security Personnel
+1 CATS04-User Interface of Security.png
+Mf) (el (THs Hi
+
+Figure 4.6 User Interface Hierarchy of Admin
+8 CAT304 User Interface of Admin png
+
+85
+25
+
+sopstins a
+
+33
+| Users’ General Interface
+
+Create Account
+
+Figure 4.8.1° Sign Up
+
+‘The Sign Up page allows new users to create an account in the system via email ot
+
+yele account. Users are required to enter essential information such as full name, email
+address, password, and confirmation password. Upon successful registration, the system
+«ereates the user account and sends a confirmation email to notify the user thatthe account has
+
+‘been created successfully
+
+87
+Welcome Back Welcome Back
+
+Figure 4.8.2: Sign In
+
+‘The Sign In page enables registered users to access the application using their email
+and password, The system verifies the user credentials before granting access. If the login is
+successful, the user is redirected to the home page. If invalid credentials are entered, the
+
+system displays an error message and prompts the user to try agai,
+
+88
+© Change Paseword
+
+@
+
+Change Your Password
+
+@ carer Passnen ‘
+@ New ®
+Confirm New Pasowerd ‘
+
+© Daten temauret pena
+
+{a__“_"_"_____§
+
+Figure 4.8.3: Forgot Password Page
+
+‘The Forgot Password page helps users recover access to their account when they
+forget their login credentials. Users are requited to enter thet registered email address. The
+
+system then sends a password reset link or verification
+
+code to the email, allowing users 10
+
+securely reset their password and regain access to the system,
+
+89
+e Ps
+
+o
+&
+2
+
+omnes ©
+
+Figure 4.84: Update User Details Page
+
+‘The Update User Details page allows users to manage their personal information
+
+Users can update their usemame, emergency contact, and enable additional in-app features
+like Shake to Sos. For password changes, users must enter their eurrent password before
+selting a new one to ensure security. After making changes, the system saves the updated
+
+information and displays a confirmation message.
+
+90
+2
+
+Figure 4.8.5: Friend feature ~ Friend list, Add friend, Friend request
+
+“To chat with other users
+
+the user is required to add friends with other users. The user
+‘can add other users using their regi
+
+ered email and it will send a friend request to the
+particular user That user ean choose to accept or reject the friend request. Afler the user
+accepts the friend request, the friend will be displayed in the friend list and the user ean
+remove the friend if needed
+
+91
+1 Delete Messages
+
+Figure 4.8.6: Conversation page
+
+Users are able to view and chat with other users. Users i
+
+delete their own messages.
+Users can view other user's profiles with their user name and email and it will display the
+
+user's role if the role is “SECURITY” or “ADME
+
+Change User Role
+
+e
+© secu
+
+sam
+
+Figure 4.8.7: Manage Users Page (Admin Only)
+
+‘The Manage Users page allows administrators to view and manage all registered user
+accounts inthe system. Administrators are able to assign and modify user roles, such as User,
+
+Security, oF Ad is and
+
+By updating user roles, the ad
+
+controls access permissi
+‘ensures that each user has appropriate system privileges according to their responsibilities.
+
+93
+4428
+
+1S Emergency Module’s Interface
+
+Compu Safety Features Campus Safety Features
+a
+
+meting herman
+
+Figure 4.9.2: SOS
+
+Videos List and Manage Vileo
+Users can pres the big middle red button in the home sereen page to access the sos
+service. It will ask for confirmation to record video features for personal use like evidence or
+security purposes or skip the video recording. The video will include audio and take video for
+a fixed 10 seconds. Ifthe video is recorded completly, it will be saved locally on the users
+device. The user can view and manage their recorded video in the home page. In that section,
+
+users can play the video, view the location when recording the video or delete the video.
+
+Figure 4.9.3: SOS message notification and SOS Message (SK Ooi: emergency contact,
+
+ufeng: campus security)
+
+‘After the video is recorded or skipped, 2 SOS alert notification will be notified that
+the alert is sent tothe users emergency contact that is pre-set up in the profile page, campus
+security and admin, The SOS alert included the message, user's name and user's live
+location. The SOS message is sent to the user's emergency contact, campus security and
+admin separately. However, the user isnot allowed to view the conversation chatbox with the
+
+‘admin to prevent distuption.
+
+9s
+Figure 4.9.4: SOS Message - Security view
+
+Figure 4.9.5: SOS Message - Admin View
+
+96
+ISER"
+
+Ifthe user has a “SECURITY" roe, they will receive the SOS alert fom the“
+role that includes sos message, which user is involved and live location. The security user ean
+mark for admin review once they have resolved the SOS issue. Meanwhile ifthe user has a
+“ADMIN” role, they will recive the SOS alert from the “USER” role that includes SOS
+message, which user is involved and live location as well. But after the security user has
+
+marked the SOS alert for admin review, the admin user will receive notification to close the
+
+cease. They ean press the “Confirm Resolved” button after review and confirm thatthe issue is
+
+resolved. Once the button is pressed, the tatus ofthe SOS alert will be c
+
+ged into
+
+‘Resolved” which can only be viewed by security and admin users
+
+Figure 4.9.6: SOS Message - Emergency contact view
+
+the user is the emerge
+
+1 Contact of another user, they will receive the SOS alert
+
+from them that includes sos message, the user and live location. Once the security and admin
+users have resolved the issues, a notification will be sent to the user’s emergency contact 10
+notify that the users that sent SOS alerts have been resolved,
+
+97
+—
+
+0 Binoecmten
+
+o
+
+98
+Users can open Shake to SOS feature inthe profile page. Once the feature is opened,
+
+n about the Shake to SOS feature being ready. Ifthe user
+
+users will receive a notifies
+shakes their device continuously within 2 seconds, a notification will pop up and the users
+‘can press it to open the SOS service. The Shake to SOS feature can be used anytime even if
+
+the USMSecure app is closed,
+
+Figure 4.9.8: SOS Power button activation
+
+‘To activate SOS service using the power button, the users need to open the app then
+‘ess the power button 3 times continuously within 2 seconds. The system will wigger a
+n to open the SOS service,
+
+notification and the user ean press the notifieat
+
+99
+)
+
+Figure 4.9.9: Cancel SO
+
+S sen ‘ANCEL SOS
+
+“The users can cancel the S inthe
+
+ce by pressing the
+
+recording Video sereen or press the “Cancel” button after the video is recorded and processing
+
+10 save the video and send the SOS
+
+message to other users. Once the SOS service is
+cancelled, a notification will be sent tothe emergency contact ofthe user, seeurity and admin
+
+10 notify thatthe SOS alert is cancelled,
+
+100
+Figure 4.9.10: No internet SOS Service
+
+the user is under no internet condition or area, the SOS service will be changed to a
+
+digeet phone call to the campus security of USM wh
+
+has been pre-set by us. For example,
+
+it redirects tothe phone call pa
+
+e with the campus security phone number
+
+101
+443
+
+ety Navigation Module’s Interface
+
+Figure 4.10.1: Safe Route Idle Mode
+
+Users can view incident reports the level of unsaeness
+
+da heatmap indica
+
+‘across the USM area through the map. Users ean also submit a report by tapping the
+
+‘bottom-right action button and selecting a location, and filling in the required report
+
+information
+
+102
+Figure 4.10.2 : Search destination, Destination view, and Route overview
+
+Users can search for and select destination within the USM area. The system
+Visualizes the selected destination on the map for user confirmation. After confirmation, the
+system calculates the safest route along with the estimated distance and travel time. Before
+
+starting navigation, users may choose to enable safety timer and route deviation alerts
+
+103
+Figure 4.10.3 : Navigation Page
+
+When navigation starts, the system provides turn-by-turn navigation. By tapping the
+
+top navigation banner, users ean view the full lst of route directions. Users may pause the
+
+navigation to suspend the safety timer of exit the navigation at
+
+y time,
+Figure 4.10.4: Safety Timeout Warning
+
+When the safety timer is enabled, the system sets an additional S-minute based on the
+‘avel time. If the timer expires, a dialog prompt is displayed asking the user to confirm their
+safety. If no response is received within 3 minutes, he system automatically sends an alert
+
+‘and shares a live location to the designated emergeney contact.
+
+10s
+a
+nae Oevain Dos e
+
+Figure 4.10.5: Route Deviation Alert
+
+When the route deviation alert is enabled, the system monitors the user's movement
+I the user deviates from the planned route by more than 300 meters, a
+
+during navigat
+safety confirmation prompt is displayed. Similarly, ifthe user does not respond within the
+
+specified time, an alert sent and live location is shared to the emergency contact,
+
+106
+res a {
+fil
+Se AE
+
+Figure 4,10.6: Share location feature
+
+By tapping the Share Live Location button, users can select a contact and share their
+
+live locati
+
+through the conversation interface. The selected contact can view the user’ live
+
+location in realtime on the map,
+
+107
+444 Community Hub Module’s Interface
+
+Figure 4.11.1: Community hub homepage
+
+In the community hub tab, users are able to see all reports and posts made by other
+
+students or security personnel. All posts consist of useful informat
+
+like post date, title,
+description, pictures, location, tag, like count, comment and post status such as resolved and
+Verified. With the filter, users can also show only verified reports or reports from a certain
+
+category.
+
+108
+Figure 4.11.2: Create new post
+
+Users can ereate a new post by pressing the “+ New Post” button. A create post screen
+is shown with input boxes for users to submit the details of the report. Once the information
+is filled, users can ereate the post by pressing the tick icon on the app bar or “Create Post”
+button below. For security personnel or admin, the posts ereated by them are automatically
+
+set as verified by default,
+
+109
+e-- e~- ”
+
+Figure 4.11.3: Post details
+
+Users can press on others or their own posts to see more details, especially the
+‘comments from other users. Users can like or reply tothe other users" comments.
+
+0
+Resolve Report
+
+Figure 4.11.4: Search posts, veri and resolve post
+
+M1
+Users might have a hard time to swipe through the reports, Search function helps the
+
+users to find related reports using title name and tags.
+
+Security personnel and admin et
+
+verily and resolve any reports made. Ifthe report is
+Verified, then it will update the waming icon inside the safety navigation map in Safety
+
+"Navigation Module so every student can receive this news in real time while using the map
+
+Figure 4.11.5: Delete post
+
+If the post information is weong and the users wish to delete it, they may press the
+
+three dot button of their post from the “My Posts” tab or
+
+the post detail sereen. Then, the
+selected post will be deleted. Admin and security personnel can delete all irelevant posts by
+other users,
+4.5 Peer Matching Module’s Interface
+
+Wat eet Tope
+
+Figure 4.12.1 : Peer matching homepage
+Diving into the peer matching page, all ofthe actions are shown in o
+
+1. Find Walking Buddy
+2. Group Walks
+3. Pending
+4
+
+Active
+
+Users can also directly create a group walk fiom this sere
+
+‘These include:
+
+U3
+Figure 4.12.2: Find walking buddy
+
+4
+“Find walking buddy” page allows users to specify the start location and destination
+so they ean send the companion walk request to other students. Students with companion
+‘walk enabled will be shown on the ative users below. Sending the request the student fora
+‘walk will show a notification on his/her sereen. Press it and the student ean choose to accept
+
+‘or reject the request. Users ean also check it inthe pending tab,
+
+us
+‘top Companion wal?
+
+Figure 4.12.3: Reject and accept walking request
+
+U6
+If the request is rejected, a notification pops out to notify the inviter: If the request is
+accepted, users ean press on the notification to open up the navigation with live buddy
+location and route 10 the destination. This sereen will be similar as in Safety Navigation
+Module.
+
+Figure 4.12.4: Group walk
+
+Inthe group walk page, there are three tabs, “Available”, “My Groups” and “History”
+“Available” shows all group walk schedules while “My Groups” shows all joined group
+‘walks, All completed group walks will then be shown inside the “History” tab. To learn about
+‘more information oF details about the group walk, users ean press into the card. As an
+‘organizer, the user can start or cancel the group walk. AS a participant, the user ean join oF
+leave the group walk.
+
+uy
+© mein }@ [@ wrrnmenmnm 1] @ — oSmobicmsacatet in
+
+© tetocton G] [0 wmueenomensos ag] -
+© Semmon ¢ oss a
+5 arco 8 a warmer er0
+
+Figure 4.12.5: Create group walk
+
+Creating group walks is similar to creating new posts on the community hub page.
+Press onto the “+ Create Group Walk” and fill inthe input boxes. Then, a new group walk
+session will be created and posted onto the “Available” tab.
+
+us
+Figure 4.12.6: Join and leave group walk
+
+9
+Users can press into any available group walks for more details. Users can look at the
+participants and join the scheduled group walk. If users have changed their mind, they can
+
+also leave the group walk session anytime,
+
+120
+Once the organizer starts the group walk, users will be redirected to the map
+navigation. Completed group walk will now appear atthe history tab. The organizer can also
+ceaneel the group walk if heishe wants to, Cancelled group walk will no longer appear in the
+available tab and a notif
+
+tion messenger will be shown notifying the organizer that the
+
+_eroup walk is cancelled successfully
+45 Input & Output Design
+
+Table 45.1: Inpui Design
+
+Input Methods
+
+Descriptions
+
+Virtual on-sereen button
+
+‘These buttons are essential for login, sign up, submit, create
+‘and more operations. The most important operation, SOS
+emergency call, is also triggered by using a big round and red
+SOS button atthe center of the homepag
+
+Physical power button
+
+Clicking the phone's power button thrice will also tigger an
+SOS call as an alternative to the virtual on-screen SOS button,
+
+Shake gesture
+
+Shaking the phone thrice with specifie shake sensitivity
+triggers our SOS emergency call as another alternative.
+
+Text fields
+
+‘Text fields provide users places to input text. Input validation
+is implemented using text matching techniques such as
+regular expression to prevent errors and ensure data integrity,
+This is exceptionally important when protecting the system
+‘against malicious or improper inputs, especially in login and.
+registration submission forms.
+
+Search field
+
+Search fields provide users places to input searched text
+Results can be filtered according to the text inside the search
+field
+
+Tab selection
+
+Allows users to switch instantly between the main application
+‘modules for quick and easy access to different features. In
+each module, users can also use tabs to select different
+categories,
+
+Filter menu
+
+Provides a list of criteria to narrow down search results oF
+displayed information. This input is then passed to the
+Firebase query.
+
+Card selection
+
+Acts as an on-sereen button to view details ofthe eae.
+
+Location picker
+
+Enables users to precisely choose a location on the map to set
+the current” location, starting location or destination,
+Combination of location picker with seatch field allows for a
+precise and user friendly input method.
+
+Media picker
+
+Allows users to access their phone's gallery to select and
+‘upload photos as visual evidence when making a new post or
+report
+
+Camera
+
+Allows users to take a picture as visual evidence on the spot
+
+Date picker
+
+Select a specific date with time in the prescheduling group
+walk of Peer Matching module,
+
+123
+Table 45.2: Ouiput Design
+
+‘Output Methods
+
+Descriptions
+
+Firebase snapshots
+
+Some data will dynamically change based on the user's
+activity of current time. Snapshots allow real time output that
+updates the UL reactive.
+
+Flutter SteeamBuilder
+
+‘This is a UL widget that listens to a Stream and rebuilds on a
+new event. It works seamlessly well with the Firebase
+snapshots mentioned above.
+
+Noti
+
+Notification is one of the best ways to notify users about real
+time updates. Conversation, SOS emergency, companion
+walk request and group walk reminder can all be delivered
+With sound and vibration alerts. An action button ean also be
+associated with the pressing of the notification,
+
+Dialogs and modal
+
+This acts as a double confirmation to prevent users from
+accidentally clicking buttons such as delete buttons.
+
+Snackbar
+
+Lightweight and non-modal message that automatically
+dismisses after a short period of time. It is commonly used for
+immediate feedback
+
+124
+‘5.0 Implementation
+
+5.1 Module Implementation
+
+S.LL Users’ G
+
+ral Functions
+
+Figure 5.1.1.1: Handle User Sign Up Via Email
+
+‘Creates a Firebase Authentication account with email/password, updates the display
+name, cteates a Firestore user profile with auto-assigned role, and sends an email verification
+link to prevent fake registrations. Error handling translates Firebase exceptions into
+
+user-friendly messages.
+Figure 5.1.1.2: Handle User Sign In Via Email
+
+Authenticates users via Firebase with email/password eredentials, then verifies the
+‘email has been confirmed. If unverified, he system immediately signs out the user and blocks
+
+access until email verification is complete, ensuring only legitimate users can log in
+
+Figure 5.1.1.3: Handle User Sign In Via Google
+
+Initiates OAuth 2.0 authentication with etrieves account erede
+
+Fogle, als, and
+
+automatically creates a new Fitestore user profile containing the user's Google display name,
+
+126
+email, photo, and auto-assigned role, This eliminates manual registration for first-time
+
+Figure 5.1.1.4: Handle Existing User Sign In Via Google
+
+Performs OAuth authentication and verifies an existing Firestore profile exists by
+
+querying with the user ID. I found, completes authentication without creating duplic
+
+ata,
+
+allowing immediate access tothe user's existing account and data,
+
+final credential
+email: useremail
+
+(credential)
+
+wordcontroler text
+
+Figure 5.1.1.5: Reauthentication Before Changing Passwont
+Figure 5.1.1.6: Fes
+
+back When User Invalid Input
+
+Before allowing any password modification, the system requires users 10
+
+uthenticate by providing their current password credentials. This two-step verification
+
+process utilises Firebase's Email uthProvider.crede
+
+jal() and reauthenticateWithCredential()
+
+methods to validate identity before executing
+
+the password update, The system handles
+
+various scenarios, including i
+
+passwords, weak password attempts, session
+limeout requirements, and general authentication failures, providing clear actionable
+
+feedback through SnackBar notifications.
+
+128
+Figure 5.1.1.7: Add Friend Using Email
+
+Users can search and connect with others by email address. When sending a request,
+
+the Fitestore users collection for
+
+the system performs comprehensive validation by querying
+
+the target email, then checks five critical conditions: user authentication, preventing
+self-friending, existing friendships, duplicate pending requests, and reverse requests. If all
+validations pass, a ftiend_requests document is created in Firestore containing both users’
+
+UIDs, emails, pending status, and timestamp.
+
+129
+Figure 5.1.1.8: Accept Friend Request
+
+When a user accepts a friend request, the system first verifies the request belongs 10
+
+imation, it
+
+them by comparing the recipient UID with the current user's ID. Upon c
+creates a new document in the friends collection containing an array with both users’ UIDs,
+establishing a biditectional fiendship that allows both patties to see each other in their
+
+fiends lists and share features like location tracking.
+
+Figure 5.1.1.9: Fetch User's Role
+
+130
+‘The system uses the getUserRole() method to fetch the user’ role from Firestore by
+
+querying theit user document with their unique UID. This method retrieves the role field
+
+Which can be ‘use’, ‘security’, or ‘admin’. The RoleRouterScreen employs a FutureBuilder to
+asynchronously wait for this role data, displaying a loading spinner during the fetch process
+
+to maintain user feedback and prevent blank sereens.
+
+“igure 5.1.10: Display Different Dashboards Based on User's Role
+
+‘Once the role is retrieved, a switeh statement evaluates the value and automatically
+
+navigates users to th
+
+designated dashboard: SecurityDashboard for security personnel with
+
+incident management tools, AdminDashboard for administrators with user management
+
+capabilities, or HomePage for regular users with communi
+
+y safety features.
+
+BI
+Figure 5.1111: Admin Edit User Role
+
+After the admin selects a new role from the dialog, this code validates that a role was.
+differs from the users current role, The system calls updateUserRole() which performs an
+‘admin authorisation check and updates the user's role field in Firestore. The system then
+
+reffeshes the entire user list by calling _loadUsers() to reflec
+
+the role change across the
+
+dashboard, ensuring data consistency.
+
+132
+)S Emergency Module
+
+1.2.1: Funetion handling send SOS service
+
+Fetch User Information
+
+Figure 5.1.2.
+
+‘The sendSOS() function is our main SOS alert system which will handle the
+
+S services have handled the entire SOS emergency
+
+fundamentals of our app, SOS service. SC
+
+workflow. The workflow
+
+ludes ftom the user pressing the SOS button, to getting user
+location and permission, to creating SOS records and alert, to notify emergency contact,
+‘admin and campus security and handles cancellation and no Internet cases. Firstly, the system
+will fetch the latest user and emergency contact data to ensure the emergency contact info is
+
+always up to date and prevent stale or outdated SOS contacts
+
+133
+Figure
+
+‘The system will check forthe connection of the device. If there is no Internet
+
+‘connection detected, the SOS servi
+
+still working but it will be another way round to start.
+
+at the
+
+‘a direct phone call to the campus secutit
+
+phone number that the system ps
+
+beginning stage
+
+Figure 5.1.2.4: Get User Location
+
+‘Then, the system will sk the permission and get the location from the user device.
+
+‘The system will get the position ofthe user based on
+
+the current position ofthe user uss
+Geolocator feature. The system assigns the latitude and longitude from the position and
+
+passes ito the google maps and gets the GPS location in goog!
+
+134
+r ath = recondeevideoPath
+
+I filesize - await videoFile
+
+localvideoPath
+
+profiletmergencyénail
+profiletmergencyPhone
+Lt .
+
+Figure 5.1.2.5: Store video recording and Create SOS Alert document in firestore
+
+‘The SOS service in our system includes a 10 second video recording. To handle the
+Video, a variable local VideoPath is created. The system provided error handling lke ifthe
+Video is not uploaded, existence of the video file and size check of the video. The video will
+
+be stored locally in the user device to ensure the video privacy and act as evidence iff any
+
+the Firestore to store the
+
+‘eases happened. A SOS alert document is created to be stored
+
+information needed to pass the message within the Fitestore and sy
+iF (.cancelRequested
+debugprint (
+
+debugprint
+final sostef instance
+
+debugprint $(sosnef.id)
+
+activesostd = sosnef. id;
+
+iF (.cancelRequested
+ebugprint (
+
+(emergencyContactEmail: profileémergencyémail)
+
+statustessage
+debugprint (
+Sprofilecmergencyémail’,
+
+Figure 5.1.2.6: SOS alert in Firestore with emergency contact info
+
+info
+
+‘The SOS alert document is created in the Fitestore with the correct emergency
+
+‘The system can tack if any active SO
+
+session is going to enable eancellatios
+
+link messages
+to SOS sessions and prevent duplicate alerts, The SOS message will be sent in the app
+‘conversation page tothe emergency contact ofthe user ifit exists and tothe security user as
+
+wel
+
+136
+Figure 5.1.2.7: SOS Message to Emergency Contact
+Figure 5.1.2.8: SOS Message to Campus Security or Admin
+
+‘The SOS mess
+
+{is generated based on the format like from who, type of message,
+
+08
+
+text description, google map ur, latitude, longitude, SOS id, sender name and timestamp. The
+
+message will be sent through the app message atthe conversation page to emergency contac.
+
+‘The content of the SOS message includes the SOS alert and live location of the user. For SOS
+
+messages that are sent to campus security and ad
+
+a, it will be the similar message structure
+
+with emerge
+
+ey contact. Our system triggers the messages sent by detecting the role of the
+
+ECURIT
+
+user. SOS messages will be sent to all users with roles, ‘and “ADMIN”,
+
+138
+Figure 5.1.2.10: Update SOS alert status
+
+139
+‘The cancelSOS() function is used when users want to cancel the SOS service. The
+
+system will stop the SOS service in
+
+mediately and generate a e
+
+sllation message us
+
+ng the
+sendCancellationMessage() function to notify the emergency contact, campus security and
+
+‘admin that the SOS service is cancelled, The status ofthe SOS alert will be changed to cancel
+to prevent any misunderstandings or any partial alert exists. The message will be sent through
+
+Within the app conversation page
+
+Figure 5.1.2.11: Send cancellation messages to Emergency Contact
+
+Figure 5.12.12: Send cancellation messages to Campus Security and Admin
+
+140
+‘AMter the user has cancelled the SOS service, a cancellation message will be generated
+and sent to the user’s emergency contact, admin and campus security. The system will fetch
+
+the co
+
+eet data to get the correct user's emer
+
+sncy contact fo send cancellation messages.
+
+Moreover, the system checks the role of the user to ensure that the cancellation messages are
+
+sent to the admin users and security users.
+
+Figure 5.1.2.13: Background Service for Android and 10S
+
+In the shake_detector_service dar
+
+file, we have initialised the background service for
+
+‘Android and 10S. For Android, the shake detector service can run as a foreground service
+
+with persistent notification. It will work even when the app is closed. Meanwhile, for 10S,
+
+the services will only work when the app is in back
+
+ground but not fully closed because of the
+10S limitation. The service worked based on the flutter background service package. After
+
+the shake is detected, a notification will pop up that says “SOS Shake Det
+
+ion Active
+
+141
+Figure 5.1.2.14: Shake Detection Algorithm
+
+‘The shake detection algorithm has monitored the accelerometer data of x, y and z axes
+
+and calculates the total acceleration magnitude. The system has removed the gravity to isolate
+movement and sensitivity threshold is fixed to 1Smvs' To prevent false triggers, the system
+
+requires 3 continuous shakes within 2 seconds.
+
+142
+Figure $12.15: 9
+
+take SOS Trigger Flow
+
+When the system tracks thatthe device has a shake pattern, it will ereate an urgent
+
+notification and use a critical
+
+erruption level to ensure the sereen is awake or open. A.
+
+set source with the ttle “EMERGENCY SOS
+
+payload, shake_sos will identify the tig,
+
+it will start the SOS servi
+
+TRIGGERED" Ifthe user presses the notificati
+
+Video.
+
+e by recording
+
+“3
+istoading = true)
+
+_istnabled = enabled
+“sensitivity = sensit
+
+istoading = false;
+
+Figure 5.1 2.16: Shake Detection Setting
+isloading
+
+istnabled ~ enabled;|
+istoading ~ fa
+
+Figure 5.1.2.17: Shake Detection Sensitivity Seuings
+
+that allows users to
+
+‘The shake _detection_setting a settings UL widg
+
+‘configure and control the shake det 1S feature which is set up atthe profile page. The
+
+_loadSettings() function will fetch current settings from SharedPreferences when the widg
+initiaises. The _updateSensitivity and _getSensitvityLabel function is used to hold and
+
+handle the sensitivity settings. It used to update both service settings and UI in real time as
+the user dragged the slider. The range ofthe sensitivity is set to low, medium high to fui
+
+every user preference.
+requiredPre
+ration presskindk
+
+ration cooldownPeriod
+
+Figure 5.1.2.18: Power Button Service Configuration Constant
+
+In the power_button_sos_service dart file, the system had defined some constant like
+
+the number of pressing power buttons to trigger SOS is 3 times and maximum time between
+
+the 3 presses is 3 seconds. To prevent accidental triggers the system has a cool down period
+
+of S seconds,
+
+Figure 5.1.2.19: Power Button Detection Algorithm
+
+‘The onPowerButtonPressed function isthe main algorithm of the power button
+detection. Fist, it wll check the cool down period of the power button. Ifyes, the system will
+ignore the power button press. If not, then add the current press to the _pressTimes list to
+
+cealeulate the power button press. The system will also remove the presses older than 3
+seconds, After the system dete
+
+s that there are 3 presses within 3 seconds, it will t
+
+Figure 5.12.20: SOS Camera Architecture and Flow
+
+146
+Figure 5.12.21: Cancel Recording
+
+In the sos_camera_sereen dar
+
+the _initializeAndRecord() function is responsible to
+‘get the available camera and prioritise the back camera to capture the environment but it will
+
+fall back to the front camera if the back camera is unavailable. The process is continued by
+
+the CameraController with medium resolution and audio is enabled. Then, the
+
+initializin
+
+Video will start recording with a 10 seconds count down. The users can cancel the recording
+
+by pressing the cancel button, This action will stop the SOS service as well. A cancellation
+
+notification will be notified to the emergency contact of the user to prevent them from
+
+worrying,
+
+sfety Navigation Module
+
+‘The Safety Navigation Module aims to improve user safety when walking within the
+
+USM area by integrating safety visualization, incident report
+
+8 and safe route navigation,
+
+Users can view incident reports and an unsafeness heatmap on the map interface to better
+understand safety conditions across campus, as well as submit new reports to contribute to
+
+‘community awareness.
+
+147
+‘The module calculates the safest route to a selected destination and provides
+turn-by-turn navigation with estimated distance and travel time. Including additional safety
+
+features such as safety timer, route deviation alerts, and live location sharing to ensure
+
+actively monitor the user's journey and notify emergency contacts when potential risks are
+
+detected. Overall, the module delivers a safer and more reliable navigation experience within
+
+the
+
+ISM campus.
+
+148
+_LoadconaunityReports
+
+ollection( report
+
+vhere("isverified”, isequal
+Resolved", {sequal
+
+tf
+
+).toList();
+
+Figure 5.1.3.1: Display report and heatmap logic
+
+‘This code demonstrates how incident reports are displayed on the map and how the
+hheatmap is generated. Verified and unresolved reports are fetched from the database and
+
+rendered as map markers. The heatmap is generated based on these reports with each report
+
+contributing to 100-meter radius area. When multiple reports overlap or are located closer,
+the heatmap intensity increases accordingly. For example, areas with five or more reports are
+
+Visualized witha red heatmap to indicate a higher level of unsafeness.
+
+150
+Figure 5.1.3.2: Caleulate the route risk
+
+‘This function calculates the overall safety risk ofa navigation route by evaluating the
+routes from Google Map API using the predefined heatmap zones that represent unsafe areas,
+
+‘The algorithm uses every fi point along
+
+the route to check whether the route has passed
+
+through the predefined heatmap, The system first eliminates zones that are clearly outside a
+220-meter range to avoid unnecessary distance calculations. When the distance is within the
+
+luster radius (100 meters), the system multiplies a high-risk penalty using an exponential
+
+formula based on the Zone’s intensity. This ensures that highly unsafe areas contribute more
+
+risk to the route score, If the point lies within 200 metres from the cluster radius, a lower
+
+penalty will be multiplied to the route score. The system tracks both rout inside
+
+po
+
+unsafe zones and near unsafe zones. The total accumulated risk score is returned at the end
+
+‘and can be used to compare routes and select the safest option for navigation,
+154
+Figure 5.1.3.3: Route Deviation Alert
+
+‘The Route Deviation Aletis implemented by caleulating
+more than 300 meters from the route, the system flags the user as off-route and displays a
+safety confirmation dialog. Ifthe user does not respond within 3 minutes, the system
+
+‘automatically sends an alert and shares the user’ live location with the desi
+
+contact. Additionally, ifthe user sel
+
+the “I Need Help” option, the system immediately
+triggers the SOS function, which will ask confirmation to record video evidence and transit
+
+the information to security personnel and administrators for
+
+nmediate response,
+
+Figure 5.1.3.4:Safety Timer
+
+‘This code implements the safety timer by extending the estimated travel time with an
+‘additional S minute buffer when the feature is enabled. When the timer is timeout, the system
+displays a safety confirmation dialog similar to the route deviation alert. If the user does not
+
+respond within 3
+
+es, an alert is automatically sent and the user’ live location is shared
+
+with the designated emergency contact. If'the user confirms “I'm Safe,” the system resets the
+
+timer with another S-minute extension, For selecting the “I Need Help” option, the system
+
+8 the SOS
+
+Will immediately wi function, which records video evidence and sends the
+
+information to security personnel and administrators for immediate response.
+Figur
+
+Share live location fanction
+
+feature. When users share thet live
+
+‘This code demonstrates the live location sharing
+
+location, the system sends a message through the conversation interface and continuously
+updates the user's location in the database, The recipient can view the user's real-time
+
+location directly on the map.
+5.14 Community Hub Module
+
+ty_hub_sereen,dart
+
+Figure 5.1.4.1: Statefil widget community hub sereen
+
+‘This code is for the home sereen of the community hub page for users to vie
+
+‘and interact with posts or also known as reports. This screen is implemented as a
+
+StatefulWidget to manage dynamic data handling and UL updates, The data is fetched using
+
+StreamBuilder from services.
+
+159
+Figure 5.1.43: Reports filtering, querying and displaying if empty
+
+We allow easier querying with searching and fil
+
+all filtered posts with the correct categc
+
+ng. I there is nothing in the search
+
+y will show up. If there is something inside the
+
+160
+search bar, posts with title or tag containing the searched text will show up. If there is no
+matched post, “No posts yet” or “No posts found” will be shown based on the total number of
+
+posts
+
+161
+Figure 5.1.44 : Building post cards
+
+Posts fetched and displayed dynamically are best implemented using the wide
+
+function, Encapsulating the logie for erea
+
+the post cards helps to make a reusable UL
+‘component. Improving the UI interface of the post cards can be made in one place. These
+
+updates will then automatically reflect wherever the method is used,
+
+Community servicedart
+
+‘This file is a service layer for interacting with Firestore database. It has the operations
+
+needed by the community hub sereen such as creating
+
+cetrieving and more. There are eight
+
+main functions in ths file which are createReport, getReports, getUiserPosts, getReportByld,
+
+resolveReport, verifyRepor, unverifyRepos
+
+and deleteReport.
+
+162
+Figure 5.1.4.5: Create report
+
+‘To create a report, we need the input parameter that takes details about the report,
+such as userld, ttle, description and more. Ifthe media files are provided, they are converted
+
+to Base64 strings for storage in Firestore. We also added an auto-verification where the
+
+reports made by admins or security personnels are automatically marked as verified,
+
+163
+Figure 5.1.4.6: Get reports
+
+‘The getReports funct
+
+on takes a few parameters such as isResolved, isVerified and
+category for filtering purposes. snapshots() is an important part where it ereates a realtime
+stream of data from Fitestore, This implies that any changes to the reports in Firestore will
+
+automatically update the UL
+Figure 5.1.4.7: Get specifie report and toggle like fanetion
+
+‘The getReportsByld takes a parameter, reportld, that specifies the report. This is
+
+useful for show: ent section when the user
+
+1g more details of a report post such as comm
+
+presses on the report. Toggle like function works by updating the likeCount
+Figure 5.1.4.8: Add comment
+
+Adding comment takes required input parameters and adds data to the “comments
+collection at Fitestore database. To make the comment count in “reports” collection tallies
+
+With the total comment entries with the reportld, commentCount field value in
+
+needs tobe increased by 1
+
+166
+Figure 5.1.4.9: Get comments
+
+Get
+
+the comments from the users takes required input parameters and retrieves the
+
+data based on matched reportd
+Figure 5.14.10: Toggle comments like
+
+‘The toggleCommentLike function checks whether the users have liked the comment
+
+(or not by using a list of liked users. Ifthe userld is already inthe list, the user is unliking the
+
+comment, else, the user is liking the comment by adding the userld to the list. Firebase
+
+transaction is used to ensure atomicity t0 prevent race conditions, especially for liking a
+
+‘comment which may be performed by a lot of users atthe same time,
+
+168
+Figure 5.14.11: Search, resolve and verify reports
+
+Seatch funet
+
+on takes required input parameters and returns snapshot of filtered data
+
+Whereas resolve and verify report functions update the data field value.
+
+169
+Figure 5.14.12: Unverify and delete reports
+
+Unverily removes the verified field and updates the flag isVerified to false. Deleting the
+report will also remove the associated comments so batch operation is needed. Atomicity is
+
+also ensured to maintain data consistency so all deletions sueceed or fil together.
+
+‘create report sereen.dart
+Figure 5.14.13: Stateful widget of ereate report screen
+Figure 5.1.4.14: Functions need in create report screen
+Creating a report requires adding and removing tags, adding location and uploading
+
+media. Text controllers are also added for other details and information,
+
+Figure 5.1.4.15: Report detail screen overview
+
+In the report detail sereen, users can see comments about the post. Users ean also add their
+
+‘own comments. So, an addComment function is needed. Security personnels and admins can
+
+also choose to verify/unverify report, resolve report and delete the report
+
+5.1.5 Peer Matching Module
+
+Figure 5.15.1: Ul design of peer matching sereen
+
+In the peer matching sere
+
+‘most of the codes are about the display of this page. These
+
+include build
+
+1g action cards, status cards, tips, and request cards, Dynamically changing UL
+
+ly involves showPendingRequests and active companion walk sessions,
+
+Figure 5.1.5.2: Ut of find buady sereen
+
+‘This part of code builds the basic structure of the screen with a current location loader and
+
+destination location picker.
+Figure 5.1.5.3: Building online users lists
+
+‘The online userlist is dynamically changing, hence we used stream builder for instant user
+
+interface changes. The online buddies list is taken from the walking buddy service
+Figure 5.1.5.4: Sending walking request to online buddies
+
+Sending the walking request requites both the current location and destination location. Once
+
+the criteria is met, users ean send the buddy request,
+
+walking buddy servicedart
+Figure 5.1.5.5: Combining streams
+
+‘This implementation is used to combine two Firestore streams of walking buddy requests into
+
+le stream. This method will listen to both requesterStream and receiverStream so when
+
+new data is received fi
+
+ym either stream, emitCombined function is called t0 update the
+
+‘combined stream,
+Figure 5.1.5.6: Update user status
+
+We have implemented the online and offline status using a new collection “online users”. By
+adding a document to the “online_users”, the number of online users is increased by 1 and the
+
+‘online user's details are shown. Wh
+
+the user goes offline, the document is deleted from the
+
+“online_users” collection in Fitestore database,
+
+Get online user
+
+Figure 5.1.5.
+
+‘As mentioned above, we used a new collection to Keep track ofthe online users. Hence, to get
+the online users’ details, we need to return the snapshot from that collection, Filtering is
+
+needed to show only the online users that are open to companion walk.
+
+FuturecString> sendBuddyR
+
+(String userId}
+
+FuturechalkeingBuddyRequest?> acceptRequest(String requestId|
+
+180
+Figure 5.1.5.8: Funetions for buddy request
+
+Users can send, accept, eject and cancel requests. Get request and active session is used
+when displaying the pending requests and accepted requests. Complete session is used when
+
+the companion walk is completed when reaching the destination,
+
+181
+Figure 5.1.5.9: Notify emergency contact
+
+Notifying the emergency contact is done by creating document at the “conversations”
+
+collection
+
+182
+Figure 5.1.5.10: Create group walk
+
+Create group walk will eveate a new document with a list of input parameters at the collection
+“group_walks". Notification service schedules the time to send the reminder notification to
+
+the organizer and participants about the upcoming group walks.
+
+183
+Figure 5.1.5.11- Get upcoming group walk and join group walk
+
+_getUpcomingGroupWalks retrieves a stream of upcoming group walks that are scheduled and
+have not yet started. joinGroupWalk allows a user to join an existing group walk when the
+
+walk isnot fll and the user has not yet joined.
+> leaveGrouphialk
+ing grouphalkId,
+
+).doc(grouphialkId)
+
+uphialk = Grouplalk. fromiap
+lapeString, dynamic>
+
+Participant? participant =
+lalk.participants.cast<Participant?>().Firstih
+p) => p2-usertd == userId,
+
+Firestore.collection doc grouplalkId) .update
+
+Fielaval e( {participant tolap() })
+
+Figure 5.1.5.12: Leave group walk
+
+‘The leaveGroupWalk method allows a user to leave @ group walk that they have joined. This
+is done by removing the user from thelist of participants in the group walk. At the same time,
+
+scheduled reminder notification is also removed forthe user,
+Figure 5.1.5.13: Start and complete group walk
+
+Start
+
+-oup walk updates the status field of the
+
+roup walk document in Firestore to
+‘n_progress”. Complete group walk updates the same field to “completed”, indicating that
+
+the walk has successfully ended. Both reminder notifications will be cancelled. To cancel or
+
+delete the group walk, the whole group walk document will be deleted from the Firebase
+
+186
+Figure 5.15.14: Get specific user group walk and expire overdue group walk
+
+‘To only show the group walks tha the user joins, we return a snapshot with filter where the
+userld in the participant lists matches with the current user's id. To cheek ifthe group walk is
+
+expired or not, we check the scheduled time with the current time.
+
+‘create group walk sereen.dart
+
+187
+Figure 5.15.15: Create group walk overview
+
+‘This part of codes shows the basic fu
+
+sions needed in the ereate group walk sereen.
+
+Locations are needed with di
+
+ind time to schedule the group walk.
+
+188
+createGroupalk(
+
+eria(),
+
+of( ) -showSnackBar(
+
+).showsnackbar(
+
+$e")
+
+ure 5.1.5.16: Create group walk func
+
+‘This function is implemented to be called when the create button is pressed, The
+
+createGroupWalk function from walking_budd will be called.
+
+Figure 5.15.17: Group walk detail sereen overview
+
+‘The group walk detail sereen contains the main functions for group walk including join,
+leave, start, complete and cancel walk. All of these are done by calling the functions from
+walking buddy service. _openNavigationToDestination is also needed for continuing the
+
+‘eroup walk navigation if users accidentally quit.
+
+tegration
+
+System integration is critical aspect of developing the USMSecure campus safety
+
+mobile application. Our group uses GitHub as a version control system to ensure seamless
+
+collaboration and functionality across different modules. Although Gitltub does not directly
+
+perform the system integration, it facilitates collaborative development and version tracking,
+Each group member is assigned to develop a specific module, When code updates are
+completed, they are pushed to Gitllub and merged into the main branch. After merging,
+
+system testing is performed on all related components to ensure that the modules interact
+
+correctly and perform their intended functions.
+
+190
+‘The User Management Module is integrated withthe Firebase authentication system
+to ensure secure access to the specific roles, User authentication and email verification is
+linked to the User Management Module to verify user identity. The SOS Emergency Module
+is integrated with the User Management Module to send the emergency request to the admin
+and security personnel, The Safety Navigation Module is linked with the Community Hub
+Module to collect the reported issue and display with the specific report icon and heatmap o
+
+the map. Community Hub Module also integrates with a safety navigation map to select the
+location to make a report. Peer Matching Module linked with Safety Navigation Module to
+
+use the navigation services to support the peer matching feature.In addition, Safety
+
+‘Navigation Module linked with the User Management Module to get the emergency contact
+
+to send the alert when the route deviation or safety timer alert is triggered. User data such as
+
+location and emergency information are stored and accessed through a centralized database to
+
+‘ensure consistency across modules.
+
+User data, such as location
+
+nd emergency information, are stored and accessed
+
+through a centralized database to maintain c
+
+istency across modules. Firebase serves as the
+centralized database by allowing all modules to update and retrieve data, including user
+
+locations, safety reports, peer connect
+
+s, and emergeney alerts. By effectively integrating
+these modules, USMSecure provides a reliable, responsive and connected platform that
+
+‘enhances campus safety and ensures a seamless user experience
+
+191
+6.00 Testing / Evaluation
+641 System Testing
+
+6.1.1 Unit Testing
+
+Table 6.1.1.1: Unit Testing
+
+Module Unit Testing
+General Module © Verify that a new user account is ereated when
+the registration process is completed.
+© Validate that user authentication succeeds when
+correct login credentials are provided,
+© Verify thatthe password recovery function sends,
+‘a reset link tothe registered email address
+‘© Ensure that users ate able to log out successfully
+‘and that all authentication sessions are cleared,
+‘© Verify that after login, users are redirected to the
+correct dashboard based on their assigned role
+‘© Confirm that role changes made by the admin
+take effect immediately upon the next login
+‘© Verify that a friend request can be successfully
+sent using a registered user's email or ID.
+‘© Confirm that accepting a friend request adds the
+user to the friend list for both users,
+SOS Emergency Module ‘© Verify SOS request is triggered when the SOS
+Dutton is pressed
+© Verify SOS request is sent sucessfully when
+intemet connection is available.
+© Verify fallback emergency phone calls are
+‘wiggered when the internet is unavailable
+‘© Verify location permission request is triggered
+‘on SOS activation
+© Verify SOS messages with details and location
+are sent to the corresponding emergency contact.
+
+192
+Verify SOS notification is sent to all users with
+security and admin roles.
+
+Verify video recording confirmation when SOS
+is activated.
+
+Verify cancellation of SOS requests can be done
+at any time before the SOS request ends
+
+Verify security and admin role ean view SOS
+
+details and user location,
+
+Safety Navigation Module
+
+Verify thatthe system activates the safety timer
+‘and extends the travel duration when the safety
+timer feature is enabled,
+
+Verify that the system detects when the safety
+timer exceeds the allowed travel time and
+tviggers the safety check.
+
+Verify that the system detects a route deviation
+correctly when the usee diverges from the
+planned navigation route and triggers the safety
+check,
+
+Verify that minor route changes do not trigger @
+route deviation alert
+
+Verify thatthe system cancels the safety alert
+‘process when the user confirms ther safety
+Within the given timetzame
+
+Verify that live locations are only shared when
+the live location sharing feature is enabled or
+triggered by safety check.
+
+Verify that an emergency alert is sent to
+‘emergency contact when the user fails to
+
+respond to the safety confirmation request.
+
+Community Hub Module
+
+Verify that all posts are shown correctly when
+users press into the community hub screen.
+
+Verify thatthe filtering on category works
+
+193
+normally and correctly.
+Verify thatthe filtering on report status works
+normally and correctly.
+
+Verify that searching reports in community hub
+works by ttle and tags
+
+Verify thatthe verification and resolved status
+are shown and ean be manipulated by authorized
+personnel
+
+Verify that images ean be uploaded as proof or
+evidence
+
+Verify that like and comment functions work
+
+normally and corretly
+
+eet Matching Module
+
+Verify that users ean search for online users that
+are open for companion walk only
+n is shown,
+
+Verify that the correct current leat
+and the destination ean be selected correctly.
+Verify that users can only send companion walk
+requests with filled current location and.
+destination,
+
+Verify thatthe requests can be received and
+users can respond tothe requests
+
+Verify that navigation is started automatically
+upon aceepting the request
+
+Verify that group walk sessions are displayed
+under correct categories.
+
+Verify that group walk ean be ereated correctly
+with correct details
+
+Verify that reminder notification ean be sent 10
+
+‘every participant ofthe group walk.
+
+6.1.2 Integration Testing
+
+Table 6.1.2.1: Integration Testing
+
+Module
+
+Integration Testing
+
+General Module
+
+‘© Verify that user registration integrates seamlessly
+with the login funetionality.
+
+© Verify that successful login retrieves the correct
+user profil, role, and permission settings from
+the database.
+
+Verify tha role-based access control integrates
+correctly withthe dashboard, displaying the
+appropriate interface and features
+
+© Verify that the friend management feature
+integrates with the messaging system, allowing
+‘only approved friends to initiate conversations
+
+© Verify that chat conversations integrate correctly
+with user profiles, displaying aceurate user
+information and role indicators
+
+SOS Emergency Module
+
+© Verify tha activating SOS requests will eorectly
+create or update a conversation,
+
+© Verify the SOS message willbe delivered
+through the conversation system.
+
+© Verify the SOS messages are routed correctly
+based on user roles
+
+‘© Verify SOS cancellation is reflected in the
+
+conversation system,
+
+Safety Navigation Module
+
+‘© Verify tha the user taps the SOS button, the
+system integrates seamlessly with the SOS
+emergency module to send the emergency
+request.
+
+© Verify that when the user taps “I Need Help” in
+the safety check, the system integrates with the
+‘SOS button function from SOS emergency
+module
+
+19s
+© Verify tha the system integrates withthe
+conversation page when the user or system
+enables live location sharing and allows the
+user's real-time location to be displayed and
+updated correctly within the conversation page
+
+‘© Verify that when the user clicks the report button
+and selects a location to report, the system
+integrates with the Community Hub module to
+
+create a report post.
+
+Community Hub Module ‘© Verify that verified reports are shown in the map
+‘of Safety Navigation module correctly.
+© Verify that resolved reports ate deleted from the
+
+‘map of Safety Navigation module successfully
+
+Peer Matching Module © Verify that accepting walking companion request
+will start the navigation tothe destination
+
+‘© Verify tha the group walk participants are shown
+correctly with the correct user name.
+
+‘© Verify that only online and open for companion
+‘walk users are shown inthe “Find Walking
+
+Buddy" sereen,
+
+6.1.3 System Testing
+
+In system testing, we ensure that all main modules of USMSecure meet the specified
+requirements and function correctly. This testing covers both functional and non-functional
+
+aspects of the system. The complete user journey was tested, including user registration,
+
+login, emergency alert triggering, using the safety navigation feature, peer matchis
+
+reporting through the community hub, and logging out. The system was also assessed under
+erroneous conditions, such as invalid login credentials, incorrect location input, or attempts to
+sulbmit incomplete reports, ensuring that appropriate error messages are displayed and the
+system recovers praveflly.
+
+196
+Security and data protection were validated throughout the application, including
+during user authentication, emergency requests, and live location sharing. Access controls
+‘were tested to ensure that users can only access functions permitted for their role, and
+sensitive data, such as location information, is securely stored and retrieved from the Firebase
+
+database. The integration betw
+
+n modules, such as the SOS Emergency Module, Safety
+‘Navigation Module, Peer Matching Module, and Community Hub Module, was tested to
+
+confirm correct interac
+
+ns and real-time updates
+
+For the User Management Module, we validated emergency contact input including
+testing with unregistered email addresses to ensure proper error handling. For the SOS
+Emergency Module, testing included triggering emergency alerts from the user's device and
+‘verifying that notifications are correctly sent to campus seeurity personnel and administrators
+Error handling was validated by testing scenarios such as i
+
+complete emergency contact
+
+information or loss of intemet connectivity, ensuring the system can handle failures
+
+‘gracefully Inthe Safety Navigation Module, tests included searching for locations outside the
+USM area, calculating safety route risk, and verifying that route deviation alerts and safety
+timer notifications are triggered correctly. For the Community Hub Module, we tested the
+creation and management of report posts, verified interaction features such as liking and
+commenting, and ensured real-time updates, Sorting and filtering of posts were also validated
+
+10 ensure correct fi
+
+ctionalty. The Peet Matching Module was tested to ensure that users can
+successfully find and connect with safety partners and the peer locations and navigation
+
+services are correctly integrated.
+
+‘Non-functional testing was conducted to ensure that the system is reliable,
+
+user-friendly, and efficient, Performance testing assessed the system’s responsiveness under
+
+multiple concurrent users. Usability testing evaluated the intuitiveness of the interface and
+
+cease of navigation for non-developers. Compatibility testing ensured c
+
+sistent functionality
+
+‘across different devices and sereen sizes. By conducting comprehensive system testing,
+USMSecure demonstrates a secure, reliable, and responsive platform that enhances campus
+
+safety while providing a seamless user experience.
+
+197
+6.2 Test Case
+
+6.2.1 General Funetions
+
+Table 6.2.1.1 Test Case for
+
+ign Up and Log In Account
+
+‘Test Case 1D ‘TOOL
+
+Use Case ID vo0O!
+
+Use Case Name | Sign Up and Log In Account
+
+“Test Input Expected Result | Pass Criteria Fail Criteria
+
+Enter valid email | Validation User data is stored | Exror message is
+
+and password and | completed and user | in the database and | displayed for
+isdirected tothe | users redirected to | account not created
+correct page. the Login page. and login failed
+
+Table 6.2.1.2 Test Case for View User Dashboard
+
+features according to | and available
+the users roe. Features based on
+assigned role
+
+‘Test Case ID ‘To02
+Use Case 1D vo02
+
+Use Case Name | View User Dashboard
+
+‘est Input Expected Result | Pass Criteria Fail Criteria
+Log inasa User dashboard User sees correct | Dashboard fils to
+registered user | loads with correct | dashboard layout loa.
+
+Table 6.2.1.3 Test Case for Manage Profile Details
+
+‘Test Case 1D ‘1003
+Use Case ID. 1v03
+
+Use Case Name | Manage Profile Details
+
+“Fest Input Expected Result | Pass Criteria Fail Criteria
+uit profile Profile details are | Updated information | Profile fails wo
+information and | updated and a is stored in database | update
+
+click save, ‘confirmation and displayed
+
+198
+displayed,
+
+Table 6.2.1.4 Test Case for Add Friend
+
+‘Test Case ID ‘To04
+Use Case ID wood
+
+Use CaseName | Add Friend
+
+“Fest Input Expected Result | Pass Criteria Fail Criteria
+Search for another | Friend requestis | Ifthe requestis | Friend request fails
+user using email and | sent successfully. | accepted, the new | to send.
+
+click Add Friend friend is added 10
+
+the users friend list.
+
+Table 6.2.1.5 Test Case for Add Emergency Contact
+
+‘Test Case 1D ‘To0s
+Use Case ID vo0s
+Use Case Name | Add Emergency Contact
+‘Test Input Expected Result | Pass Criteria, Fail Criteria
+Enter contact name | Contactissaved | Emergency contact | Contact is not saved.
+and phone number. | successfully and | appears in the
+
+‘confirmation contact list and is
+
+message is stored in database.
+
+displayed:
+
+Table 6.2.1.6 Test Case for Manage User Account
+
+‘Test Case ID ‘7006
+Use Case 1D v006
+
+Use Case Name | Manage User Account
+
+‘est Input Expected Result | Pass Criteria Fail Criteria
+
+Admin views user | All user accounts ae | System pe User's role filed to
+listand edits user | displayed. view, edit, change
+
+role delete actions
+
+19
+6228
+
+Table 6.2
+
+S Emergency Module
+
+2.1 Test Case for Send Emergency
+
+‘Fest Case 1D
+
+‘1007
+
+Use Case ID
+
+1v007
+
+Use Case Name
+
+Send Emergency SOS Request
+
+system, contact, admin and
+security personnel
+with location
+
+“Test Input Expected Result | Pass Criteria Fail Criteria
+Users press the SOS ] SOS emergency] SOS request is SOS request is not
+button from the | requests are created successfully | triggered.
+
+bottom navigation | triggered and and SOS message is
+
+bar. processed by the | sent to emergency
+
+Table 6.2.2.2 Test Case for Activate SOS by Power Button
+‘Test Case ID ‘To08
+Use Case ID vo08
+
+Use Case Name
+
+Activate SOS by Power Button
+
+system, contact, admin and
+security personnel
+with location,
+
+“Fest Input Expected Result | Pass Criteria Fail Criteria
+Users press the SOS emergency | SOS request is SOS request is not
+power button 3 requests are created successfully | triggered.
+
+times continuously | triggered and and SOS message is
+
+within 3 seconds, | processed by the | sent to emergeney
+
+Table 6.2.2.3 Test Case for Activate SOS by Shake Detection
+‘Test Case ID ‘1009
+Use Case ID. 1v009
+
+Use Case Name
+
+Activate SOS by Shake Detection
+
+“Fest Input
+
+Expected Result | Pass Criteria
+
+Fail Criteria
+
+200
+Users shake ther
+device for 31
+
+SOS emergency
+requests are
+triggered and
+processed by the
+system,
+
+SOS request is
+created successfully
+and SOS message is
+sent to emergency
+contact, admin and
+security personnel
+with location,
+
+SOS request is not
+wiggered.
+
+‘Test Case ID To10
+
+Use Case 1D volo
+
+Use Case Name | Remove Emergency Alert
+
+“Test Input Expected Result | Pass Criteria Fail Criteria
+
+Users press the
+
+request i triggered.
+
+SOS emergency
+
+cancel button before | request is cancelled.
+the SOS emergency
+
+‘Acaneellation
+‘message is sent to
+
+personnel,
+
+SOS request is
+
+wiggered.
+
+‘Test Case ID Tol
+
+Use Case 1D voll
+
+Use Case Name __| Video and Audio Recording Duri
+
+‘est Input Expected Result | Pass Criteria Fail Criteria
+
+Users press the
+“Record Video"
+
+the SOS button.
+
+A camera page will
+‘open with a cancel
+
+button after pressing | button at bottom,
+
+“The video is stat
+to record.
+
+The video is not
+
+sfety Navigation Module
+
+Table 6.2.3.1 Test Case for View Safety Hotspot Area
+
+‘Test Case ID
+
+To
+
+Use Case ID.
+
+vol
+
+201
+Use Case Name] View Safety Hotspot Area
+‘Test Input Expected Result | Pass Criteria, Fail Criteria
+
+Click on the safety | Users see the Heatmap based on | Heatmap are not
+navigation tab different colours of | the number of report | shown correctly or
+
+heatmap display on | shows specitic color | totally no heatmap
+the map. are displayed
+
+Table 6.2.3.
+
+2 Test Case for View Reported Issues Displayed on the Map
+
+‘Test Case ID
+
+Tos
+
+Use Case ID.
+
+vols,
+
+Use Case Name
+
+View Repo
+
+ced Issues Displayed on the Map
+
+“Fest Input Expected Result | Pass Criteria, Fail Criteria
+Click on the safety] Users see the report | All reports are Reports are not
+navigation tab icons displayed on | shown correctly on | shown correctly oF
+
+the map. the map without any | totally no reports are
+displayed.
+Table 6.2.3.3 Test Case for Navigate safety roue
+‘Test Case ID Tod
+Use Case ID. vols
+Use Case Name | Navigate safety route
+“Fest Input Expected Result | Pass Criteria Fail Criteria
+Select the ‘The system will | The systemavoids | The system directs
+destination at the | calculate the safest | routes marked as | the user through a
+search bar route using heatmap | high-risk onthe | dangerous area or no
+and reported issues | heatmap route is produced
+
+Table 6.2.3.4 Test Case for Share live location
+
+‘Test Case ID
+
+ols
+
+Use Case ID
+
+vols
+
+Use Case Name
+
+Share live location
+
+‘Test Input Expected Result
+
+ass Criteria
+
+Fail Criteria
+
+Select the e
+
+‘The system sends a
+
+share the live message to the
+location selected contacts
+allowing them to
+
+View the user's
+real-time location.
+
+“The system
+continuously
+updates the user's
+live location forthe
+selected contacts
+
+‘The selected contact
+cannot see the live
+location or the
+location does not
+update
+
+Table 6.2.3.5 Test Case for Route Deviation Aler
+
+“Test Case ID O16
+Use Case 1D vole
+
+Use Case Name | Route Deviation Alert
+
+“Test Input Expected Result | Pass Criteria Fail Criteria
+
+User deviates from | The system detects
+the planned safe | the route deviation
+route and tig,
+
+tw the user
+
+‘An safety check is
+displayed when the
+route deviation is
+detected
+
+No safety check is
+triggered, or the
+route deviation
+failed to detect
+
+Table 6.2.3.6 Test Cas
+
+se for Set Safety Timer
+
+‘Test Case ID Tol7
+Use Case ID. vol7
+
+Use Case Name _| Set Safety Timer
+
+“Test Input Expected Result | Pass Criteria Fail Criteria
+
+User enabled the | The system starts the | The timer counts | The timer does not
+safety timer feature | safety imerand | down correctly and_| start, counts down
+before navigation | monitors the triggers a safety | incorrectly, or fails
+started ‘countdown check when it igger the safety
+
+expires
+
+6.24 Community Hub Module
+
+Table 6.24.1 Test Case for View all reports by users
+
+‘Test Case ID Tos
+
+203
+Use Case ID vols
+
+Use Case Name | View all reports by users
+“Fest Input Expected Result | Pass Criteria, Fail Criteria
+Click on the Users see alist of | All reports are Reports are not
+community hub tab | reports as posts, | shown correctly | shown correctly of
+with view count, and | without any missing | totally no reports ane
+like, comment, share | entries. displayed.
+Dutton.
+Table 6.2.4.2 Test Case for Add report to community hub
+‘Test Case 1D To
+Use Case ID. vo19
+Use Case Name | Add report to community hub
+“Fest Input Expected Result | Pass Criteria, Fail Criteria
+Press om the “+ New | A new post appears | The information | The new post did
+Post” button fon the community | filled in the ereate | not show up of
+hub page with post screen is information is
+correct information. | displayed correctly | incorrect ot both.
+in the community
+hub page.
+
+Table 6.243 TestCase for Upload images to the report
+
+‘Test Case 1D 1020
+Use Case ID. vo20
+Use Case Name | Upload images to the report
+“Test Input Expected Result | Pass Criteria Fail Criteria
+Presson the “Add | A new post appears | A new post is shown | The images cannot
+Photos" or “Take | onthe community | with images. When | display in the repo
+Photo” button hub page with Verified by the post.
+images, noticing | security personnel or
+‘other users nearby. | admin, the post is
+shown on the map,
+noticing other users,
+
+204
+Table 6.2.44 Test Case for Like or dislike report posts
+
+‘Test Case 1D ‘To2
+Use Case ID. vo2
+Use Case Name | Like or dislike report posts
+“Fest Input Expected Result | Pass Criteria, Fail Criteria
+Presson the like | Like icon turns red | Liked post's like | Like icon does not
+button and like count is icon turns red. Like turn red and like
+increased by | count is consistent} count doesn't
+across every users’ change.
+display sereen,
+
+Table 6.2.4.5 Test Case for Resolve issue reported in community hub
+
+‘Test Case ID ‘1022
+
+Use Case ID. v022
+
+Use Case Name | Resolve issue reported in community hub
+
+“Fest Input Expected Result | Pass Criteria, Fail Criteria
+
+Press om the ‘The report is marked | The report is shown | The report doesn’t
+
+resolved button _| resolved and is. in the correct fall into the resolved
+categorized into | category. The report | category and the
+resolved report page. | is not shown in the | map is still showing
+Report disappears | map anymore. the resolved report if
+from the map in verified
+safety navigation,
+
+6.25 Peer Matching Module
+
+Table 6.25.1 Test Use Case for
+
+Search for online walking buddy around campus
+
+“Test Case 1D 023
+Use Case 1D 023
+
+Use Case Name | Search for online walking buddy around campus
+
+“Test Input Expected Result | Pass Criteria Fail Criteria
+
+Press “Find Walking | Walking buddies | Walk
+Buddy" card that switch on their | shown e« information is not
+“Open for with alist of online| fetched and
+
+Online users!
+
+205
+‘companion walk displayed correctly.
+setting are shown, | companion walk | Requests eanaot be
+Users ean send users. Requests can_ | sent or received.
+‘companion walk ent and received
+
+Fequests to th
+
+Table 6.2
+
+Test Case for Accept Reject walking companion invitation
+
+‘Test Case ID To.
+Use Case 1D 02s
+
+Use Case Name | Accept/Rejeet walking companion invitation
+
+‘est Input Expected Result | Pass Criteria Fail Criteria
+
+Press om the popped | Users are redirected | Pending requests are | Notification pressed
+to the pending shown. Two options, | but nothing changed
+request screen, ‘Accept or fF no action is taken,
+Users can press “Accept” and
+Accept" wostarta | provided. “Accept” | “Reject” buttons
+walk o “Reject to | leads to the hhave no functions.
+
+decline navigation sereen
+while “Reject
+
+notifies the invite
+
+Table 6.25.3 Test Case for Preschedule group walking
+
+“Test Case 1D T02s
+Use Case 1D 02s
+
+Use Case Name | Preschedule group walking
+
+‘est Input Expected Result | Pass Criteria Fail Criteria
+
+Press on the
+Group Wall
+
+ate | A create group walk | A new group walk is | A new group walk
+button | screen is shown with | created and shown | was not added
+
+input fields. Users | inside the available | successfully.
+setthe inputanda — | group walk page
+
+new group walk is | with correct details,
+created and
+
+displayed in the
+available group walk
+page.
+
+206
+Table 6.25.4 Test Case for Cancel group walk
+
+‘Test Case ID 1026
+Use Case 1D 026
+
+Use Case Name | Cancel group walk
+
+‘Test Input Expected Result | Pass Criteria Fail Criteria
+
+Press om the “Cancel | Group walk is Group walk is Group walk still
+Walk” button deleted successfully | deleted successfully appears in the
+and disappeared and disappeared | “Available” ab,
+from the available | from the available
+tab, tab.
+
+6.3 System Evaluation
+
+UsMSecure, as a campus safety application, is required to meet a few criteria that are crucial
+
+for ensuring the student's safety. Below isa system evaluation covering these eriteria,
+
+Table 6.3.1: System Evaluation Based On Criteria
+
+Criteria Description
+
+Performance = The system must be able to deliver an S
+response within 0.1 seconds.
+= The system should have a smooth operation even if
+multiple users are online atthe same time.
+= The system launch time must be less than 0.1 second
+= Thesystem
+
+OS emergency
+
+Reliability = The system should be able to display precise and correct
+information at all times.
+= Minimal error and downtime is ensured with no more than
+5 minutes of downtime per day.
+
+Availabilty = The system must be workable even running in the
+background.
+
+~The system maintains 99.9
+
+and reliable aceess tothe users.
+
+iptime, ensuring consistent
+
+Security = The system needs to verily the identity ofthe users by
+‘email verification,
+= Allthe control, update and delete access should only be
+‘accessible to all the authorized personnel only using role
+based access,
+
+Maintainability = The system source code should be modular and easily
+
+207
+‘modified for minor or even major updates.
+
+= The system source code should be reviewed et
+fix any redundancy such as duplicated code,
+
+= The system source code should be well documented for
+future updates,
+
+tantly to
+
+Portability = The system must be available on the devices with
+_AndroidOS platiorm,
+
+Usability ~The user interface must be user-friendly, allowing easy
+navigation through different modules.
+= Clear labelling and colour assignment should be used for
+easier understanding,
+
+7.0 Conclusion & Future Work
+7.1 Conclusion
+
+‘To sum up, the USMSecure mobile application has been successfully developed as a
+comprehensive tool to help users access SOS emergency service, safety navigation map,
+community hub system and peer matching system. By integrating five main modules
+
+including General module, SOS Emerge
+
+1ey module, Safety Navigation module, Community
+
+Hub module at
+
+Peer Matching module, the system provides a user-friendly and efficient
+
+user experience, All data and information are stored in the Firebase as our backend service to
+censure confidentiality and security, Besides that, the data used is always up to date to ensure
+
+the latest data will be used at any time especially for the user's information,
+
+‘The project's primary objectives have been achieved after the implementation is
+completed and proper operation of core modules including SOS emergency services, safety
+
+navigation map and community hub system,
+
+7.2 Future Work
+
+For future development, USMSecure can be applied in other campuses with features
+
+tailored to the specific layouts, boundaries, and safety requirements of each campus. By
+
+customizing the application for different campus environments, students, staff, and visitors
+
+ccan receive more accurate safety alerts, navigation guidance, and emergency support in their
+
+208
+‘own campus. Beyond campuses, the application has the potential to be extended to public
+areas to provide personal safety services to a wider community. Integration with relevant
+authorities, including police, ambulance, and campus security, this could enable real-time
+‘emergency responses and coordinated interventions
+
+Future enhancements may also include advanced technological integration. For
+‘example, real-time heatmaps based on crowd density could improve risk assessment for
+safety navigation, In addition, integration with CCTV and IoT sensors could provide
+
+‘additional safety data to enbs
+
+ce reporting, monitoring, and predictive analysis of potentially,
+dangerous areas. Computer vision and machine learning algorithms could be applied to detect
+
+suspicious people and predict safety risks.
+
+‘These improvements would significantly strengthen USMSecure’s capability to
+provide immediate response, enhance personal and community safety, and create a safer,
+more responsive, and highly connected environment for a broad range of users both within
+
+‘campuses and public spaces. The expansion an
+
+technological enhancements would position
+
+USMSecure as a comprehensive safety platform adaptable to various cor 1d user needs.
+
+References
+
+1. The Star. (2024, January 14). USM engineering campus computer lab catches fire.
+The Stat
+
+tps./www thestar.com my/newst/nation/2024/01/14/usm-engineering-eampus-comp
+
+uter-lab-catches-fire
+
+2. PressReader. (n.d). hts: /pressreader.com/article/281805700159720
+3. The Star. (2025, May 7). State govt partners USM to educate motorists on safe
+‘commuting. The Star
+
+tps:/www thestar.com my/metro/metro-news/2025/05/07/state-govt-partners-usm-t0
+
+-oducate-motorisis-on-safe-commuting
+
+4. Yusof, N., et al (nd). Knowledge assessment of symptoms identification
+
+International Journal of Pharmaceutical Sciences Review and Research, 65(2), 1-9.
+
+5. Ling, Z., Marzbali, M. HL, & Yat 4). PERCEPTION OF SAFETY AND
+OUTDOOR PHYSICAL ACTIVITY AMONG STUDENTS IN UNIVERSITY
+CAMPUSES: DOES PLACE ATTACHMENT MATTERS? PLANNING
+
+MALAYSIA, 22. huips/(doiore/10.21837ipm.v22i34,1612
+
+6. Mustafa, M.F, Isa, MR. M,, Rauf, U. FA. Ismail, M.N., Shukran, M.A. M.,
+Khairuddin, M. A., Wahab, N., & Safar, N. Z. M. (2021), STUDENT PERCEPTION
+STUDY ON SMART CAMPUS: A CASE STUDY ON HIGHER EDUCATION
+INSTITUTION. Malaysian Jounal of Computer Science, 1-20.
+dupsidoi org/10.22452/mmies.sp202 Lao]
+
+7. Kaiko Mubita (2021). Understa
+
+ling School Safety and Security: Conceptualizatior
+
+and Definitions. 5(1), 76-86. htps:/www researchgate nev publication/353702472,
+
+8. Driving directions, live traffic & road conditions updates - Waze. (n.d). Waze.
+ups:/www waze.comlen-GBilivesmap
+
+9. Google Maps. (n.d.). Google Maps. htips:/vww. google com/maps
+
+10, Apple Maps. (n..).hutps:!/maps apple.com!
+11. HERE WeGo. (nd). hitps:/wevo here.com/
+12. Koziol, J. (2016). Safety and risk. Security and Defence, 49), 107-124.
+tpsfdoiorg/10,5604/23008741,1209156
+
+13.Audit of Antisemitie Incidents’ — 2024, 2025). ADL.
+
+ntps://www ad org/esources/report/udit-antisemiticincidents-2004
+
+14, Lacoe, J. (n.). Too scared to learn? The Academic Consequences of Feeling Unsafe
+{at School. Working Paper #02-13
+
+huupslleric.ed gov/ideEDSS6783
+
+15. TEH ATHIRA YUSOF. (2025, October 22). Teen charged with murder of student at
+Bandar tama school The Star.
+utps:/www thestar.com my /news/nation/2025/1022/teen-charged-with-murderof sty
+
+es
+
+ndar-utama- schoo}
+
+16.Global Goals. (nd). Goal II: Sustainable cities and communities.
+
+hups:www globalgoals.org/goal/l|-sustainable-cities-and.communities/
+
+17. Rave Mobile Sale. (a), Rave Guardian.
+utps:www ravemobilesafety com/productv/rave-guardian!
+
+18. Get Bsafe. (nd.). Get Bsafe. hups/iwww.getbsafe.com
+
+19, LifeGuardian Mobile. (n.d). LifeGuarlian Mobile CAD.
+hups:/Mifeguardianmobile com/eadl
+
+20. Vietoria University. (nd). = VU Safe mobile app.
+uups:www vu edu au/safery-respect/vu-sufe-mobile-app
+
+2

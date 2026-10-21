@@ -4,10 +4,6 @@ import time
 import pymupdf
 from PIL import Image
 
-# Record the start time of the OCR process
-start_time = time.time()
-print("Starting OCR process at ", time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(start_time)))
-
 # Initialize the path to the Tesseract OCR executable
 pytesseract.pytesseract.tesseract_cmd = r'C:/Program Files/Tesseract-OCR/tesseract.exe'
 
@@ -31,18 +27,22 @@ def process_page(page_number):
     # Perform OCR on the image
     return pytesseract.image_to_string(img)
 
+# Record the start time of the OCR process
+start_time = time.time()
+
+print("Starting OCR process at ", time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(start_time)))
 # For loop for sequential OCR processing of each page
 for page_number in range(total_pages):
     # Perform OCR on the image
     extracted_text += process_page(page_number)
     
-# Save the extracted text to a file
-with open("Result/extracted_text_sequential.txt", "w", encoding="utf-8") as text_file:
-    text_file.write(extracted_text)
-
 end_time = time.time()
 
 # Calculate the total time taken for the OCR process
 time_taken = end_time - start_time
 print("Ending OCR process at ", time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(end_time)))
 print(f"OCR process completed in {time_taken:.2f} seconds.")
+    
+# Save the extracted text to a file
+with open("Result/extracted_text_sequential.txt", "w", encoding="utf-8") as text_file:
+    text_file.write(extracted_text)

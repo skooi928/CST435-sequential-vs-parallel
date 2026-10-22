@@ -52,6 +52,50 @@ def run_ocr(thread_count: int, page_numbers: list[int]) -> float:
 
     return end_time - start_time
 
+def save_timing_results(timing_results: list[dict[str, object]]) -> None:
+    """Append this run's timings as a new column in the timing CSV."""
+    thread_counts = [str(result["thread_count"]) for result in timing_results]
+    existing_rows: list[dict[str, str]] = []
+
+    if os.path.exists(TIMING_FILE):
+        with open(TIMING_FILE, newline="", encoding="utf-8") as csv_file:
+            reader = csv.DictReader(csv_file)
+            existing_rows = list(reader)
+
+        if existing_rows:
+            existing_thread_counts = [
+                row.get("thread_count", "") for row in existing_rows
+            ]
+            if existing_thread_counts != thread_counts:
+                raise ValueError(
+                    "Existing timing CSV has different thread counts."
+                )
+
+    if existing_rows:
+        run_number = sum(
+            column.startswith("time_seconds_run_")
+            for column in existing_rows[0]
+        ) + 2
+        column_name = f"time_seconds_run_{run_number}"
+        fieldnames = list(existing_rows[0])
+        fieldnames.append(column_name)
+        for row, result in zip(existing_rows, timing_results):
+            row[column_name] = result["time_seconds"]
+    else:
+        column_name = "time_seconds"
+        fieldnames = ["thread_count", column_name]
+        existing_rows = [
+            {
+                "thread_count": str(result["thread_count"]),
+                column_name: result["time_seconds"],
+            }
+            for result in timing_results
+        ]
+
+    with open(TIMING_FILE, "w", newline="", encoding="utf-8") as csv_file:
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(existing_rows)
 
 def main() -> None:
     os.makedirs(RESULT_DIRECTORY, exist_ok=True)
@@ -82,13 +126,7 @@ def main() -> None:
             f"{elapsed_time:.2f} seconds\n"
         )
 
-    with open(TIMING_FILE, "w", newline="", encoding="utf-8") as csv_file:
-        writer = csv.DictWriter(
-            csv_file,
-            fieldnames=["thread_count", "time_seconds"],
-        )
-        writer.writeheader()
-        writer.writerows(timing_results)
+    save_timing_results(timing_results)
 
     print(f"Timing results saved to: {TIMING_FILE}")
 

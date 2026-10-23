@@ -7,11 +7,12 @@ import pymupdf
 import pytesseract
 from PIL import Image
 
+import sys
+os.environ["OMP_THREAD_LIMIT"] = "1"
 
 TESSERACT_PATH = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 PDF_PATH = "411pages_report.pdf"
 RESULT_DIRECTORY = "Result"
-TIMING_FILE = os.path.join(RESULT_DIRECTORY, "ocr_thread_timings.csv")
 
 
 pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
@@ -21,14 +22,14 @@ def process_page(page_number: int) -> str:
     """Render one PDF page and perform OCR on it."""
     with pymupdf.open(PDF_PATH) as document:
         page = document.load_page(page_number)
-        pixmap = page.get_pixmap()
+        pixmap = page.get_pixmap(dpi=200)
         image = Image.frombytes(
             "RGB",
             [pixmap.width, pixmap.height],
             pixmap.samples,
         )
 
-    return pytesseract.image_to_string(image)
+    return f"===== Page {page_number + 1} =====\n" +pytesseract.image_to_string(image)
 
 
 def run_ocr(thread_count: int, page_numbers: list[int]) -> float:
@@ -44,7 +45,7 @@ def run_ocr(thread_count: int, page_numbers: list[int]) -> float:
 
     output_file = os.path.join(
         RESULT_DIRECTORY,
-        f"extracted_text_{thread_count}_threads.txt",
+        f"{len(page_numbers)}p_{thread_count}_threads.txt",
     )
 
     with open(output_file, "w", encoding="utf-8") as text_file:
@@ -52,13 +53,13 @@ def run_ocr(thread_count: int, page_numbers: list[int]) -> float:
 
     return end_time - start_time
 
-def save_timing_results(timing_results: list[dict[str, object]]) -> None:
+def save_timing_results(timing_results: list[dict[str, object]], timing_file) -> None:
     """Append this run's timings as a new column in the timing CSV."""
     thread_counts = [str(result["thread_count"]) for result in timing_results]
     existing_rows: list[dict[str, str]] = []
 
-    if os.path.exists(TIMING_FILE):
-        with open(TIMING_FILE, newline="", encoding="utf-8") as csv_file:
+    if os.path.exists(timing_file):
+        with open(timing_file, newline="", encoding="utf-8") as csv_file:
             reader = csv.DictReader(csv_file)
             existing_rows = list(reader)
 
@@ -92,7 +93,7 @@ def save_timing_results(timing_results: list[dict[str, object]]) -> None:
             for result in timing_results
         ]
 
-    with open(TIMING_FILE, "w", newline="", encoding="utf-8") as csv_file:
+    with open(timing_file, "w", newline="", encoding="utf-8") as csv_file:
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(existing_rows)
@@ -103,13 +104,17 @@ def main() -> None:
     with pymupdf.open(PDF_PATH) as document:
         total_pages = document.page_count
 
-    page_numbers = list(range(total_pages))
+    page_count = int(sys.argv[1]) if len(sys.argv) > 1 else total_pages
+    page_numbers = list(range(min(page_count, total_pages)))
+    timing_file = os.path.join(
+        RESULT_DIRECTORY, f"ocr_thread_timings_{len(page_numbers)}p.csv"
+    )
     timing_results: list[dict[str, object]] = []
 
     print(f"Total pages: {total_pages}")
     print("Starting OCR benchmark...\n")
 
-    for thread_count in range(1, 9):
+    for thread_count in [1,2,3,4,5,6,7,8]:
         print(f"Running OCR with {thread_count} thread(s)...")
 
         elapsed_time = run_ocr(thread_count, page_numbers)
@@ -126,9 +131,8 @@ def main() -> None:
             f"{elapsed_time:.2f} seconds\n"
         )
 
-    save_timing_results(timing_results)
-
-    print(f"Timing results saved to: {TIMING_FILE}")
+    save_timing_results(timing_results, timing_file)
+    print(f"Timing results saved to: {timing_file}")
 
 
 if __name__ == "__main__":

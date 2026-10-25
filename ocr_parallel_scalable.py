@@ -114,7 +114,7 @@ def main() -> None:
     print(f"Total pages: {total_pages}")
     print("Starting OCR benchmark...\n")
 
-    for thread_count in [1,2,3,4,5,6,7,8]:
+    for thread_count in range(1,13):
         print(f"Running OCR with {thread_count} thread(s)...")
 
         elapsed_time = run_ocr(thread_count, page_numbers)
